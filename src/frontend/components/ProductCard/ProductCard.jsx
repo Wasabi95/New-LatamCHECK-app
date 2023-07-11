@@ -192,7 +192,7 @@ const ProductCard = ({ product }) => {
           ))}
         </div>
 
-        <footer className={styles.footer}>
+       {/*  <footer className={styles.footer}>
           <button
             disabled={isBothDisable || !inStock}
             className={
@@ -208,7 +208,7 @@ const ProductCard = ({ product }) => {
           >
             {productBtnText}
           </button>
-        </footer>
+        </footer> */}
       </div>
     </article>
   );

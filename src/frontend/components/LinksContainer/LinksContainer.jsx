@@ -45,11 +45,7 @@ const LinksContainer = () => {
         </div>
       </NavLink>
 
-      <NavLink className={navStyle} to='/social-media'>
-        <div className={styles.socialMediaIcon}>
-          <FaInstagram />
-        </div>
-      </NavLink>
+     
     </div>
   );
 };

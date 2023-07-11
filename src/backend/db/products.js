@@ -40,7 +40,7 @@ export const products = [
     price: 54499,
     originalPrice: 74999,
     image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683908295/mi-notebook-pro_hi4vih.jpg',
+      'https://images.pexels.com/photos/1464210/pexels-photo-1464210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     colors: [
       {
         color: '#00ff00',
@@ -66,7 +66,7 @@ export const products = [
     price: 13499,
     originalPrice: 24999,
     image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683908781/mi-5a_spazxt.jpg',
+      'https://images.pexels.com/photos/1586034/pexels-photo-1586034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     colors: [
       {
         color: '#0000ff',
@@ -100,7 +100,7 @@ export const products = [
     price: 21399,
     originalPrice: 29999,
     image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683909215/mi-horizon_n4anpx.jpg',
+      'https://images.pexels.com/photos/2698475/pexels-photo-2698475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     colors: [
       {
         color: '#000',
@@ -122,7 +122,7 @@ export const products = [
     price: 1299,
     originalPrice: 1599,
     image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683909289/mi-sonicBass_zgkhiw.jpg',
+      'https://images.pexels.com/photos/1464220/pexels-photo-1464220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     colors: [
       {
         color: '#0000ff',
@@ -146,40 +146,15 @@ export const products = [
     reviewCount: 8238,
     stars: 2.5,
   },
-  {
-    _id: '9b3a09fe-7064-422e-b30e-ad0b2a82ae10',
-    name: 'mi buds 3 lite',
-    price: 2999,
-    originalPrice: 1599,
-    image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683909559/mi-buds-3-lite_g4ntj3.jpg',
-    colors: [
-      {
-        color: '#ff0000',
-        colorQuantity: 0,
-      },
-      {
-        color: '#ffb900',
-        colorQuantity: 0,
-      },
-    ],
-    company: 'redmi',
-    description:
-      'This is a "In Ear" product and wireless. Features include Lightweight with Lock-in Design, Bluetooth 5.2 and Type-C Compatibility.',
-    category: 'earphone',
-    isShippingAvailable: false,
-    stock: 0,
-    reviewCount: 1101,
-    stars: 1.5,
-  },
+
   {
     _id: '505f7323-9dc4-4927-bd76-2ffa15a029d6',
-    name: 'mi watch 2 lite',
+    name: 'Protestors in France have released animals from the zoo.',
     price: 2280,
     originalPrice: 7999,
     featured: true,
     image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683909641/mi-watch-2-lite_ofbl7m.jpg',
+      'https://static.politifact.com/politifact/photos/old_video_animals.png',
     colors: [
       {
         color: '#00ff00',
@@ -205,11 +180,11 @@ export const products = [
   },
   {
     _id: '23bb9fd2-553b-492f-8289-041281948e5d',
-    name: 'mi smartband pro',
+    name: 'El Titanic no se hundió en 1912 sino que fue el Olympic',
     price: 1999,
     originalPrice: 5999,
     image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683909682/mi-smartband-pro_bzxg3v.jpg',
+      'https://static.politifact.com/CACHE/images/politifact/photos/Titanic_launches_April_1912_AP_file_photo/da9c101559ef976a724277c7990dbcbe.jpeg',
     colors: [
       {
         color: '#ff0000',
@@ -231,11 +206,11 @@ export const products = [
   },
   {
     _id: 'dd46bd36-53cf-47ba-8890-2e7cf48efe0d',
-    name: 'mi 12 pro',
+    name: 'Bill Gates is behind the five recent cases of malaria in the United States.',
     price: 44999,
     originalPrice: 79999,
     image:
-      'https://res.cloudinary.com/dtbd1y4en/image/upload/v1683909725/mi-12-pro_mlm5mt.jpg',
+      'https://static.politifact.com/CACHE/images/politifact/photos/Mosquito_malaria_file_photo/e98c91dda1c80b12f9c2e0307228460d.jpg',
     colors: [
       {
         color: '#0000ff',
