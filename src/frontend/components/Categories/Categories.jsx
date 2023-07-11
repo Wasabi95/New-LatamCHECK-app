@@ -24,15 +24,17 @@ const Categories = () => {
       <Title>Categories</Title>
 
       <div className={`container ${styles.categoryContainer}`}>
-        {categoriesFromContext.map(({ _id, categoryName }) => (
-          <article
-            key={_id}
-            className={styles.category}
-            onClick={() => handleCategoryClick(categoryName)}
-          >
-            <span>{categoryName}</span>
-          </article>
-        ))}
+      {categoriesFromContext.map(({ _id, categoryName, img }) => (
+  <article
+    key={_id}
+    className={styles.category}
+    onClick={() => handleCategoryClick(categoryName)}
+  >
+    <img src={img} alt={categoryName} />
+    <span>{categoryName}</span>
+  </article>
+))}
+
       </div>
     </section>
   );

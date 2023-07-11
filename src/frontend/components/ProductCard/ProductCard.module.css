@@ -1,13 +1,14 @@
 .productStyle {
-  background: var(--white);
-  /* border: 1px solid var(--grey-100); */
-  border-radius: var(--borderRadius);
+  /* background: var(--white); */
+  border-bottom: 1px solid var(--grey-100);
+  border-radius: 10px;
   width: 80%;
   position: relative;
   transition: var(--transition);
-  box-shadow: var(--shadow-2);
+  /* box-shadow: var(--shadow-2); */
   cursor: default;
 }
+
 
 .productStyle:hover {
   box-shadow: var(--shadow-4);
@@ -20,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--overlay-bcg); 
+  background: var(--overlay-bcg);
   z-index: 2;
   cursor: not-allowed;
   color: var(--white);
@@ -103,6 +104,7 @@
   display: flex;
   align-items: center;
   gap: 0 0.3rem;
+  margin-top: 10px;
 }
 
 .cardMain {
@@ -190,6 +192,101 @@
   background: var(--grey-100);
   animation: skeleton-loading 1s linear infinite alternate;
 }
+
+
+.socialSharing {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 23px;
+  margin-top: 20px;
+}
+
+/* Styles for Facebook icon */
+.facebookIcon {
+  color: blue;
+  transition: color 0.3s ease;
+}
+
+.facebookIcon:hover {
+  color: lightblue;
+}
+
+/* Styles for LinkedIn icon */
+.linkedinIcon {
+  color: #0e76a8;
+  transition: color 0.3s ease;
+}
+
+.linkedinIcon:hover {
+  color: #7fc5e5;
+}
+
+/* Styles for Twitter icon */
+.twitterIcon {
+  color: #1da1f2;
+  transition: color 0.3s ease;
+}
+
+.twitterIcon:hover {
+  color: #7cc1f3;
+}
+
+/* Styles for Email icon */
+.emailIcon {
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
+.emailIcon:hover {
+  color: #f47575;
+}
+
+/* ProductCard.module.css */
+
+/* ... your existing styles ... */
+
+.status {
+  padding: 0.1rem 0.4rem;
+  font-size: 0.75rem;
+  background: var(--primary-600);
+  border-radius: var(--borderRadius);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+
+
+.statusRed {
+  background-color: red;
+  border-color: red; /* add this line to set the border color for "FALSO" */
+  color: white;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.75rem;
+  border-radius: 9px;
+}
+
+.statusGreen {
+  background-color: green;
+  border-color: green; 
+  color: white;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.75rem;
+  border-radius: 9px;
+}
+
+.statusOrange {
+  background-color: orange;
+  border-color: orange; 
+  color: white;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.75rem;
+  border-radius: 9px;
+}
+.p-status {
+ 
+}
+
 
 @keyframes skeleton-loading {
   0% {

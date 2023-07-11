@@ -70,7 +70,7 @@ const Filters = ({
         </button>
       </header>
 
-      <fieldset>
+   {/*    <fieldset>
         <legend>Price Range</legend>
 
         <Slider
@@ -95,7 +95,7 @@ const Filters = ({
           <span>{midValue(minPriceFromContext, maxPriceFromContext)}</span>
           <span>{maxPriceFromContext}</span>
         </div>
-      </fieldset>
+      </fieldset> */}
 
       <fieldset>
         <legend>Category</legend>
@@ -116,7 +116,7 @@ const Filters = ({
         ))}
       </fieldset>
 
-      <fieldset>
+     {/*  <fieldset>
         <legend>Company</legend>
 
         <select
@@ -171,7 +171,7 @@ const Filters = ({
             </label>
           </div>
         ))}
-      </fieldset>
+      </fieldset> */}
     </form>
   );
 };

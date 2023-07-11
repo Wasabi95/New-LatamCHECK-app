@@ -1,3 +1,203 @@
+/* import React from 'react';
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  EmailShareButton,
+} from 'react-share';
+import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import styles from './ProductCard.module.css';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Price from '../Price';
+import {
+  LOGIN_TOAST,
+  calculateDiscountPercent,
+  isPresent,
+} from '../../utils/utils';
+import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
+import { useAuthContext } from '../../contexts/AuthContextProvider';
+import { useState } from 'react';
+
+const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isCardInWishlistPage = location.pathname === '/wishlist';
+
+  const { user } = useAuthContext();
+  const {
+    wishlist: wishlistFromContext,
+    cart: cartFromContext,
+    addToCartDispatch,
+    moveToCartDispatch,
+    addToWishlistDispatch,
+    removeFromWishlistDispatch,
+  } = useAllProductsContext();
+  const shareUrl = window.location.href;
+  const { colors, stock } = product;
+  const inStock = stock > 0;
+
+  const [activeColorObj, setActiveColorObj] = useState(colors[0]);
+
+  const [isBothDisable, setIsBothBtnDisable] = useState(false);
+
+  const isProductInCart = isPresent(
+    isCardInWishlistPage
+      ? product._id
+      : `${product._id}${activeColorObj.color}`,
+    cartFromContext
+  );
+
+  const isProductInWishlist = isPresent(
+    isCardInWishlistPage
+      ? product._id
+      : `${product._id}${activeColorObj.color}`,
+    wishlistFromContext
+  );
+
+  let productBtnText = isCardInWishlistPage ? 'move to cart' : 'add to cart';
+
+  if (isProductInCart) {
+    productBtnText = 'go to cart';
+  }
+
+  const discountPercent = calculateDiscountPercent(
+    product.price,
+    product.originalPrice
+  );
+
+  const handleCartBtnClick = async (dispatchFunction) => {
+    if (!user) {
+      LOGIN_TOAST();
+      navigate('/login', { state: { from: location.pathname } });
+      return;
+    }
+
+    if (isProductInCart) {
+      navigate('/cart');
+      return;
+    }
+
+    setIsBothBtnDisable(true);
+
+    await dispatchFunction({
+      ...product,
+      _id: isCardInWishlistPage
+        ? product._id
+        : `${product._id}${activeColorObj.color}`,
+      colors: [activeColorObj],
+    });
+    setIsBothBtnDisable(false);
+  };
+
+  const handleWishlistBtnClick = async () => {
+    if (!user) {
+      LOGIN_TOAST();
+      navigate('/login', { state: { from: location.pathname } });
+      return;
+    }
+
+    setIsBothBtnDisable(true);
+
+    if (isProductInWishlist) {
+      // delete from wishlist
+      await removeFromWishlistDispatch(
+        isCardInWishlistPage
+          ? product._id
+          : `${product._id}${activeColorObj.color}`
+      );
+      setIsBothBtnDisable(false);
+      return;
+    }
+
+    await addToWishlistDispatch({
+      ...product,
+      _id: `${product._id}${activeColorObj.color}`,
+      colors: [activeColorObj],
+    });
+    setIsBothBtnDisable(false);
+  };
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+      timeZone: 'UTC',
+    };
+    return date.toLocaleDateString('en-US', options);
+  };
+
+  
+        
+
+  const getStatusColor = (status) => {
+    if (status === 'FALSO') {
+      return styles.statusRed;
+    } else if (status === 'VERDADERO') {
+      return styles.statusGreen;
+    } else if (status === 'PARCIAL') {
+      return styles.statusOrange;
+    } else {
+      return '';
+    }
+  };
+
+  return (
+    <article
+      className={
+        inStock
+          ? styles.productStyle
+          : `${styles.productStyle} ${styles.disabledProduct}`
+      }
+    >
+      <div className={styles.imgContainer}>
+        <Link to={`/products/${product._id}`}>
+          <img src={product.image} alt={product.name} />
+        </Link>
+      </div>
+
+      <div className={styles.cardInfo}>
+        <header className={styles.cardHeader}>
+          <span className={styles.rating}>{product.stars}</span>
+          <div className={styles.socialSharing}>
+            <FacebookShareButton url={shareUrl}>
+              <FaFacebook className={styles.facebookIcon} />
+            </FacebookShareButton>
+            <LinkedinShareButton url={shareUrl}>
+              <FaLinkedin className={styles.linkedinIcon} />
+            </LinkedinShareButton>
+            <TwitterShareButton url={shareUrl}>
+              <FaTwitter className={styles.twitterIcon} />
+            </TwitterShareButton>
+            <EmailShareButton url={shareUrl}>
+              <FaEnvelope className={styles.emailIcon} />
+            </EmailShareButton>
+          </div>
+          <p>{product.name}</p>
+        </header>
+        <p className="product-date">{formatDate(product.date)}</p>
+        <span className={`product-status ${getStatusColor(product.status)}`}>
+          {product.status}
+        </span>
+     
+      </div>
+      
+    
+       
+    </article>
+  );
+};
+
+export default ProductCard; */
+
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  EmailShareButton,
+} from 'react-share';
+import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import {
   AiFillCheckCircle,
   AiFillHeart,
@@ -123,6 +323,32 @@ const ProductCard = ({ product }) => {
     setIsBothBtnDisable(false);
   };
 
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+      timeZone: 'UTC',
+    };
+    return date.toLocaleDateString('en-US', options);
+  };
+
+  const shareUrl = window.location.href;
+
+  const getStatusColor = (status) => {
+    if (status === 'FALSO') {
+      return styles.statusRed;
+    } else if (status === 'VERDADERO') {
+      return styles.statusGreen;
+    } else if (status === 'PARCIAL') {
+      return styles.statusOrange;
+    } else {
+      return '';
+    }
+  };
+        
+
   return (
     <article
       className={
@@ -136,30 +362,35 @@ const ProductCard = ({ product }) => {
           <img src={product.image} alt={product.name} />
         </Link>
       </div>
-
-    {/*   <button
-        onClick={handleWishlistBtnClick}
-        disabled={isBothDisable || !inStock}
-        className={
-          isProductInWishlist
-            ? `${styles.heartContainer} ${styles.coloredHeart}`
-            : styles.heartContainer
-        }
-      >
-        {isProductInWishlist ? <AiFillHeart /> : <AiOutlineHeart />}
-      </button> */}
+     
 
       <div className={styles.cardInfo}>
         <header className={styles.cardHeader}>
-        <span className={styles.rating}>
+        <div className={styles.socialSharing}>
+            <FacebookShareButton url={shareUrl}>
+              <FaFacebook className={styles.facebookIcon} />
+            </FacebookShareButton>
+            <LinkedinShareButton url={shareUrl}>
+              <FaLinkedin className={styles.linkedinIcon} />
+            </LinkedinShareButton>
+            <TwitterShareButton url={shareUrl}>
+              <FaTwitter className={styles.twitterIcon} />
+            </TwitterShareButton>
+            <EmailShareButton url={shareUrl}>
+              <FaEnvelope className={styles.emailIcon} />
+            </EmailShareButton>
+          </div>
+          <span className={styles.rating}>{product.category}</span>
+      {/*   <span className={styles.rating}>
             {product.stars} <AiFillStar />
-          </span>
+          </span> */}
           <p>{product.name}</p>
-          <p>{product.author}</p>
+          <p>{product.author}</p>         
           
         </header>
+        <p className="product-date">{formatDate(product.date)}</p>
 
-        <main className={styles.cardMain}>
+      {/*   <main className={styles.cardMain}>
           <Price amount={product.price} />
           {discountPercent > 0 && (
             <>
@@ -190,7 +421,10 @@ const ProductCard = ({ product }) => {
                 !isCardInWishlistPage && <AiFillCheckCircle />}
             </span>
           ))}
-        </div>
+        </div> */}
+        <span className={`product-status ${getStatusColor(product.status)}`}>
+          {product.status}
+        </span>
 
        {/*  <footer className={styles.footer}>
           <button
@@ -215,3 +449,6 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
+
+
+
