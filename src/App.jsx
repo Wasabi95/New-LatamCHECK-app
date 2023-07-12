@@ -12,9 +12,16 @@ import {
   SharedLayout,
   SharedProfileLayout,
   SignupPage,
-  SingleProductPage,
-  WishListPage,
+  SingleProductPage,  
+  WishListPage, 
+  
+  
+ 
+  
 } from './frontend/pages';
+import AboutUsPage from './frontend/pages/AboutUsPage';
+import HowWeDo from './frontend/pages/HowWeDo';
+
 
 import { ToastContainer } from 'react-toastify';
 
@@ -40,17 +47,16 @@ const App = () => {
 
         <Routes>
           <Route path='*' element={<ErrorPage />} />
-
           <Route path='/login' element={<LoginPage />} />
-
           <Route path='/signup' element={<SignupPage />} />
-
+          <Route path='/about' element={<AboutUsPage />} />
+          <Route path='/howdo' element={<HowWeDo />} />
+          
           <Route path='/' element={<SharedLayout />}>
             <Route index element={<Home />} />
-
             <Route path='products' element={<ProductListingPage />} />
-
             <Route path='products/:productId' element={<SingleProductPage />} />
+            
 
             <Route
               path='cart'
