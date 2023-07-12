@@ -8,6 +8,12 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  letter-spacing: var(--letterSpacing); 
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: capitalize;
+  width: 100%;
 }
 .category img {
   width: 100%;
@@ -21,10 +27,5 @@
     gap: 1.5rem;
   }
 
-/*   .category:hover {
-    background: var(--primary-500);
-    color: var(--primary-100);
-    box-shadow: var(--shadow-3);
-    scale: 1.1;
-  } */
+
 }
