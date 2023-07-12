@@ -21,7 +21,7 @@ const Categories = () => {
 
   return (
     <section className='section'>
-      <Title>Categories</Title>
+      <Title>Categorias</Title>
 
       <div className={`container ${styles.categoryContainer}`}>
       {categoriesFromContext.map(({ _id, categoryName, img }) => (

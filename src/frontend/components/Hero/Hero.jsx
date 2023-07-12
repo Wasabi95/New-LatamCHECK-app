@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
 
           <Link to='/products' className={`btn ${styles.btnHero}`}>
-            Read More
+            Leer Mas
           </Link>
         </article>
 

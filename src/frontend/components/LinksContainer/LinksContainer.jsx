@@ -24,7 +24,6 @@ const LinksContainer = () => {
       <NavLink className={styles.exploreLink} to='/products'>
         Explore
       </NavLink>
-
       <NavLink className={navStyle} to='/wishlist'>
         <div className={styles.socialMediaIcon}>
           <FaTwitter />
@@ -51,6 +50,7 @@ const LinksContainer = () => {
         </div>
       </NavLink>
     </div>
+    
   );
 };
 

@@ -1,39 +1,3 @@
-/* import { Link } from 'react-router-dom';
-import { FOOTER_LINKS } from '../../constants/constants';
-import styles from './Footer.module.css';
-
-const Footer = () => {
-  const presentYear = new Date().getFullYear();
-
-  return (
-    <section classNameName={styles.footer}>
-      <div classNameName={styles.linksContainer}>
-        {FOOTER_LINKS.map((singleLink) => (
-          <Link key={singleLink.id} to={singleLink.url} target='_blank'>
-            {singleLink.icon}
-          </Link>
-        ))}
-      </div>
-
-      <p>
-        © {presentYear}{' '}
-        <span>
-          <Link
-            classNameName={styles.nameLink}
-            to={FOOTER_LINKS[0].url}
-            target='_blank'
-          >
-           LatamCHECK{' '}
-          </Link>
-        </span>
-        All rights reserved
-      </p>
-    </section>
-  );
-};
-
-export default Footer;
-  */
 
 import { Link } from "react-router-dom";
 import "./Footer.css";
@@ -89,13 +53,15 @@ function Footer() {
 <div className="row">
   <div className="col-3 menu">
     <ul>
-    <li>Estados Unidos</li>
+    <Link to='/products'>  
+    <li>Estados Unidos</li>    
     <li>Mexico</li>
     <li>America Latina</li>
     <li>Covid-19</li>
     <li>Medio Ambiente</li>
     <li>HOAX</li>
     <li>Resto del Mundo</li>
+    </Link>
     </ul>
   </div>
 
@@ -132,12 +98,12 @@ function Footer() {
     <Link to="/about" className="about-link" style={{ textDecoration: 'none' }}>
       <h2>Nosotros?</h2>
     </Link>
-    <p>Uncover truth with LatamCHECK, your reliable source for fact-checking and debunking myths. Trust verified facts.</p>
+    <p>Uncover truth with LatamCHECK, your reliable source for fact-checking and debunking myths..  </p>
 
     <Link to="/howdo" className="howdo-link" style={{ textDecoration: 'none' }}>
       <h2>Como Verificamos?</h2>
     </Link>
-    <p>Through rigorous investigation, LatamCHECK use methodologies to uncover falsehoods, verify information, and present accurate findings.</p>
+    <p>Through rigorous investigation, LatamCHECK use methodologies to uncover falsehoods, verify information,..</p>
   </div>
 </div>
 
