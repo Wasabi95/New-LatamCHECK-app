@@ -21,6 +21,9 @@ import {
 } from './frontend/pages';
 import AboutUsPage from './frontend/pages/AboutUsPage';
 import HowWeDo from './frontend/pages/HowWeDo';
+import Blog1 from "./frontend/pages/Blog1/Blog1"
+import Blog2 from "./frontend/pages/Blog2/Blog2"
+import Blog3 from "./frontend/pages/Blog3/Blog3"
 
 
 import { ToastContainer } from 'react-toastify';
@@ -51,6 +54,9 @@ const App = () => {
           <Route path='/signup' element={<SignupPage />} />
           <Route path='/about' element={<AboutUsPage />} />
           <Route path='/howdo' element={<HowWeDo />} />
+          <Route path='/blog1' element={<Blog1 />} />
+          <Route path='/blog2' element={<Blog2 />} />
+          <Route path='/blog3' element={<Blog3 />} />
           
           <Route path='/' element={<SharedLayout />}>
             <Route index element={<Home />} />

@@ -24,7 +24,7 @@ const Hero = () => {
           </Link>
         </article>
 
-        
+        {!isMobile && (
           <article className={styles.imageContainer}>
             <img
               src={pets}
@@ -32,7 +32,7 @@ const Hero = () => {
               className={styles.banner}
             />
           </article>
-       
+        )}
       </div>
     </section>
   );

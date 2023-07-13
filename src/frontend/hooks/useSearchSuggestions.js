@@ -29,11 +29,21 @@ const useSearchSuggestions = ({
 
   const showFilteredList = () => {
     setFilteredList(
-      productsFromContext.filter(({ name }) =>
-        lowerizeAndCheckIncludes(name, trimmedSearch)
-      )
+      productsFromContext.filter(({ name, tags, description }) => {
+        const lowerCaseSearchText = trimmedSearch.toLowerCase();
+        const lowerCaseName = name.toLowerCase();
+        const lowerCaseTags = tags.map((tag) => tag.toLowerCase());
+        const lowerCaseDescription = description.toLowerCase();
+  
+        return (
+          lowerCaseName.includes(lowerCaseSearchText) ||
+          lowerCaseTags.some((tag) => tag.includes(lowerCaseSearchText)) ||
+          lowerCaseDescription.includes(lowerCaseSearchText)
+        );
+      })
     );
   };
+  
 
   useEffect(() => {
     setIsSuggestionsLoading(true);

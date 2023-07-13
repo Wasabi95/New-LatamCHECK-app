@@ -1,14 +1,12 @@
 import styles from './SearchBar.module.css';
-
 import Suggestions from './Suggestions';
 import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
-
 import { BsSearch } from 'react-icons/bs';
 import { useSearchSuggestions } from '../../hooks';
 import { useFiltersContext } from '../../contexts/FiltersContextProvider';
 
 const SearchBar = () => {
-  // instead of allData, get from product context
+  
   const { products: productsFromContext, timedMainPageLoader } =
     useAllProductsContext();
   const { updateSearchFilterInContext, filters: filtersStateFromContext } =

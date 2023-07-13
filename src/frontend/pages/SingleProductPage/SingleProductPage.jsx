@@ -164,14 +164,14 @@ const SingleProductPage = () => {
 
       <div className={styles.productContent}>
         <h3 className='primary-color-text'>{name}</h3>
-        <div className={styles.userReview}>
+     {/*    <div className={styles.userReview}>
           <span className={styles.rating}>
             {stars} <AiFillStar />
           </span>
-          <p>({reviewCount} customer reviews)</p>
+         <p>({reviewCount} customer reviews)</p> 
         </div>
-
-        <div className={styles.price}>
+ */}
+    {/*     <div className={styles.price}>
           <Price amount={price} />
           {discountPercent > 0 && (
             <>
@@ -179,11 +179,11 @@ const SingleProductPage = () => {
               <span className={styles.discount}> ({discountPercent}% off)</span>
             </>
           )}
-        </div>
+        </div> */}
 
         <p className={styles.desc}>{description}</p>
 
-        <div className={styles.row}>
+        {/* <div className={styles.row}>
           <span>Availability:</span>
           <p>{inStock ? 'In Stock' : 'Out Of Stock'}</p>
         </div>
@@ -225,16 +225,16 @@ const SingleProductPage = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.row}>
+       {/*  <div className={styles.row}>
           <span>Available Stock:</span>
           <p>{activeColorObj.colorQuantity}</p>
-        </div>
+        </div> */}
 
         <hr />
 
-        <div className='btn-container'>
+      {/*   <div className='btn-container'>
           <button
             className={`btn btn-padding-desktop ${
               isSinglePageProductInCart && 'btn-activated'
@@ -256,7 +256,7 @@ const SingleProductPage = () => {
               ? 'Go to Wishlist'
               : 'Add To Wishlist'}
           </button>
-        </div>
+        </div> */}
       </div>
     </main>
   );

@@ -36,7 +36,7 @@
 .imgContainer {
   height: 10rem;
   width: 100%;
-  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+  /* border-radius: var(--borderRadius) var(--borderRadius) 0 0; */
   overflow: hidden;
   border-bottom: 2px solid var(--grey-100);
   cursor: pointer;

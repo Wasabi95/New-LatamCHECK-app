@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 function Footer() {
   return (
     <>
+    <div className="full-footer">
       <div className="header footer-n">
         <h1>
           <span>
@@ -125,6 +126,7 @@ function Footer() {
 
       <div className="footer">
         <p>&copy; {new Date().getFullYear()} LatamCHECK. All rights reserved.</p>
+      </div>
       </div>
     </>
   );
