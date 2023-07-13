@@ -68,7 +68,7 @@
   }
   .exploreLink
  {
-  display: none;
+  margin-left: 10px;
  }
   .linkCSS {
     font-size: 1.25rem;
@@ -79,6 +79,9 @@
   }
   .login {
     font-size: 0.85rem;
+  }
+  .navStle {
+    display: none;
   }
 
   .itemCount {
