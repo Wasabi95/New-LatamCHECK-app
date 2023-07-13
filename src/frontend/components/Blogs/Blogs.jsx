@@ -1,43 +1,71 @@
-import React from 'react'
+import React from 'react';
+import "./Blogs.css";
 
 function Blogs() {
   return (
     <div>
        
 
-<div className="row">
-  <div className="col-6 menu">
-    <h1> Lo mas Leido</h1>
-    <ul>
-    <li>The Flight</li>
-    <li>The City</li>
-    <li>The Island</li>
-    <li>The Food</li>
-    </ul>
-  </div>
-
-
-
+      <div className="row">
+      <div className="divider"></div>
   <div className="col-6 right">
-  <h1> Blogs</h1>
-    <div className="aside">
-    
-      <h2>What?</h2>
-      <p>Chania is a city on the island of Crete.</p>
-      <h2>Where?</h2>
-      <p>Crete is a Greek island in the Mediterranean Sea.</p>
-      <h2>How?</h2>
-      <p>You can reach Chania airport from all over Europe.</p>
+    <h1>Lo mas leido</h1>
+    <div className="aside1">    
+      <div className="article">
+        <img className="image" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202307/12-13-1_1-sixteen_nine.jpg?size=948:533" alt="Image 1" />
+        <div>
+          <h4>Joe Biden admite vender secretos de estado</h4>   
+          <p>Does a video show President Joe Biden openly admitting to selling state secrets? Biden was making a joke at the outset of a roundtable with India’s prime minister..</p>
+        </div>
+      </div>
+      <div className="article">
+        <img className="image" src="https://www.politico.eu/cdn-cgi/image/width=1920,quality=80,onerror=redirect,format=auto/wp-content/uploads/2023/01/16/GettyImages-1240852563-scaled.jpg" alt="Image 2" />
+        <div>
+          <h4>WEF of pets for climate change</h4>
+          <p>The video’s narrator said the World Economic Forum launched the euthanization to reduce carbon that pets produce from eating meat.</p>
+        </div>
+      </div>
+      <div className="article">
+        <img className="image" src="https://static.politifact.com/CACHE/images/politifact/photos/progresspridemural/3a0eb2f71e05182bc28534f42a43fb14.jpg" alt="Image 3" />
+        <div>
+          <h4>The blue, pink, and white colors in the progress pride flag represent pedophiles</h4>
+          <p>The video, shared on Facebook, shows a man standing in front of a large mural of the progress pride flag. In it..</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="col-6 right">
+    <h1>Blogs</h1>
+    <div className="aside1">    
+      <div className="article">
+        <img className="image" src="https://helios-i.mashable.com/imagery/articles/07H0JDqdjqv7Q73TwDk3lJK/hero-image.fill.size_1200x675.v1687880371.jpg" alt="Image 1" />
+        <div>
+          <h4>What are deepfakes? How to spot them?</h4>   
+          <p>AI-generated fake videos are becoming more common (and convincing). Here’s why we should be worried, Have you seen Barack Obama call Donald Trump a “complete dipshit”?</p>
+        </div>
+      </div>
+      <div className="article">
+        <img className="image" src="https://www.ilounge.com/wp-content/uploads/2020/02/Spam-Phishing-and-Clickbait-An-Overview-of-Internet-Scams.jpg" alt="Image 2" />
+        <div>
+          <h4>How to spot Clickbaits?</h4>
+          <p>Anyone who has ever had an email account understands the concept of spam — unwanted mass communiques that clutter up your inbox with their offers for discount Viagra, sexy singles near you?.</p>
+        </div>
+      </div>
+      <div className="article">
+        <img className="image" src="https://images.pexels.com/photos/268460/pexels-photo-268460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3" />
+        <div>
+          <h4>The blue, pink, and white colors in the progress pride flag represent pedophiles</h4>
+          <p>The video, shared on Facebook, shows a man standing in front of a large mural of the progress pride flag. In it..</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<div className="divider"></div>
 
-<div className="footerww">
-  <p>Resize the browser window to see how the content respond to the resizing.</p>
-</div>
-      
     </div>
-  )
+     
+  );
 }
 
-export default Blogs
+export default Blogs;

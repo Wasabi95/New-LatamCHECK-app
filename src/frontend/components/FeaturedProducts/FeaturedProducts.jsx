@@ -21,7 +21,7 @@ const FeaturedProducts = () => {
 
       <div className={styles.exploreButtonContainer}>
         <NavLink to='/products'>
-          <button className={styles.exploreButton}>Read More</button>
+          <button className={styles.exploreButton}>Ver mas Chequeos</button>
         </NavLink>
       </div>
     </section>

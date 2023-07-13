@@ -11,7 +11,7 @@ function Footer() {
   return (
     <>  
  
-<div className="header">
+<div className="header footer-n">
 <h1>
   <span>
     <span
@@ -43,7 +43,7 @@ function Footer() {
     style={{
       marginLeft: "5px",
       cursor: "pointer",
-      verticalAlign: "middle", // Adjust the vertical alignment here
+      verticalAlign: "middle", 
     }}
   />
 </h1>
