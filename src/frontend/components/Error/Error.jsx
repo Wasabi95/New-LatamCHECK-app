@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Error.module.css';
-import errorImg from '../../assets/jethalal-error.png';
+import errorImg from '../../assets/404-error.png';
 
 const Error = ({ errorText }) => {
   return (

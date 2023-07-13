@@ -35,6 +35,7 @@
 
 .logoTheme {
   color: var(--primary-600);
+  font-weight: 900;
 }
 
 @media screen and (max-width: 768px) {

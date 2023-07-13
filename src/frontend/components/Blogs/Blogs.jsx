@@ -10,6 +10,7 @@ function Blogs() {
       <div className="divider"></div>
   <div className="col-6 right">
     <h1>Lo mas leido</h1>
+    <div className="underlinetx"></div>
     <div className="aside1">    
       <div className="article">
         <img className="image" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202307/12-13-1_1-sixteen_nine.jpg?size=948:533" alt="Image 1" />
@@ -36,6 +37,7 @@ function Blogs() {
   </div>
   <div className="col-6 right">
     <h1>Blogs</h1>
+    <div className="underlinetx"></div>
     <div className="aside1">    
       <div className="article">
         <img className="image" src="https://helios-i.mashable.com/imagery/articles/07H0JDqdjqv7Q73TwDk3lJK/hero-image.fill.size_1200x675.v1687880371.jpg" alt="Image 1" />

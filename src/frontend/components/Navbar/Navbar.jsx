@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { LinksContainer } from '..';
 import SearchBar from '../SearchBar/SearchBar';
 import styles from './Navbar.module.css';
+import greencheck from "../Footer/images/greencheck.png"
 
 const Navbar = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ const Navbar = () => {
         className={`container ${styles.navCenter} ${
           isNavInLoginOrSignupPage && styles.loginNavCenter
         }`}
+        
       >
         <Link to='/'>
           <h3 className={styles.logo}>
@@ -22,6 +24,7 @@ const Navbar = () => {
             <span className={styles.logoTheme}>
               CHECK{!isNavInLoginOrSignupPage ? '.' : 'tronics'}
             </span>
+          
           </h3>
         </Link>
 

@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import jethalalBanner from '../../assets/jethalalBanner.png';
+//import jethalalBanner from '../../assets/jethalalBanner.png';
 import pets from '../../assets/pets.png';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '../../hooks';
@@ -24,7 +24,7 @@ const Hero = () => {
           </Link>
         </article>
 
-        {!isMobile && (
+        
           <article className={styles.imageContainer}>
             <img
               src={pets}
@@ -32,7 +32,7 @@ const Hero = () => {
               className={styles.banner}
             />
           </article>
-        )}
+       
       </div>
     </section>
   );
