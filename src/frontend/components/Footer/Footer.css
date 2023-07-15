@@ -21,6 +21,7 @@ html {
   background-color: #2b0f7e;
   color: #ffffff;
   padding: 15px;
+  height: 90px; /* Add the desired height value */
 }
 
 /* .full-footer {

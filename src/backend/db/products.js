@@ -11,6 +11,9 @@ export const products = [
     date: new Date("2023-12-31").toISOString(),
     tags: ["Politica", "Falso", "zilongotico ", "Desantis", "trumpista", "Puerto Rico", "hb-1011", "sb-668"],
     status: "FALSO",
+    afirmacion: "Hello People",
+    analisis: "Esto es fake",
+    veredicto: "Esta informacion es falsa",
     price: 31990,
     originalPrice: 51999,
     image:
@@ -44,6 +47,9 @@ export const products = [
     date: new Date("2023-12-30").toISOString(),
     tags: ["Politica", "Falso", "Ron", "Desantis", "Bandera", "Puerto Rico", "hb-1011", "sb-668"],
     status: "VERDADERO",
+    afirmacion: "Hello People",
+    analisis: "Esto es fake",
+    veredicto: "Esta informacion es falsa",
     price: 54499,
     originalPrice: 74999,
     image:
@@ -73,6 +79,9 @@ export const products = [
    date: new Date("2023-12-31").toISOString(),
    tags: ["Politica", "Falso", "Ron", "Desantis", "Bandera", "Puerto Rico", "hb-1011", "sb-668"],
    status: "PARCIAL",
+   afirmacion: "Hello People",
+    analisis: "Esto es fake",
+    veredicto: "Esta informacion es falsa",
     price: 13499,
     originalPrice: 24999,
     image:
@@ -110,6 +119,9 @@ export const products = [
     date: new Date("2023-12-25").toISOString(),
     tags: ["Politica", "Falso", "Ron", "Desantis", "Bandera", "Puerto Rico", "hb-1011", "sb-668"],
     status: "FALSO",
+    afirmacion: "Hello People",
+    analisis: "Esto es fake",
+    veredicto: "Esta informacion es falsa",
     price: 21399,
     originalPrice: 29999,
     image:

@@ -97,6 +97,9 @@ const SingleProductPage = () => {
     stock,
     reviewCount,
     stars,
+    afirmacion,
+    analisis,
+    veredicto,
   } = singleProductData;
 
   const discountPercent = calculateDiscountPercent(price, originalPrice);
@@ -181,16 +184,26 @@ const SingleProductPage = () => {
           )}
         </div> */}
 
-        <p className={styles.desc}>{description}</p>
+       
+        
+        
+        
 
-        {/* <div className={styles.row}>
-          <span>Availability:</span>
-          <p>{inStock ? 'In Stock' : 'Out Of Stock'}</p>
-        </div>
+     
+          <p className={styles.desc}>{description}</p>
+     
 
         <div className={styles.row}>
-          <span>Shipping Available:</span>
-          <p>{isShippingAvailable ? 'Yes' : 'No'}</p>
+          <span>Afirmacion:</span>
+          <p className={styles.afirmacion}>{afirmacion}</p>
+        </div>
+        <div className={styles.row}>
+          <span>Analisis:</span>
+          <p className={styles.analisis}>{analisis}</p>
+        </div>
+        <div className={styles.row}>
+          <span>Veredicto:</span>
+          <p className={styles.veredicto}>{veredicto}</p>
         </div>
 
         <div className={styles.row}>
@@ -198,7 +211,7 @@ const SingleProductPage = () => {
           <p>{category}</p>
         </div>
 
-        <div className={styles.row}>
+       {/*  <div className={styles.row}>
           <span>Company:</span>
           <p>{company}</p>
         </div>
@@ -225,7 +238,7 @@ const SingleProductPage = () => {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>  */}
 
        {/*  <div className={styles.row}>
           <span>Available Stock:</span>

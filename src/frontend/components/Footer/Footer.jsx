@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import greencheck from "./images/greencheck.png";
+import lc2 from "./images/lc2.png"
 import '@fortawesome/fontawesome-free/css/all.css';
 
 function Footer() {
@@ -8,6 +9,7 @@ function Footer() {
     <>
     <div className="full-footer">
       <div className="header footer-n">
+      <Link to="/">
         <h1>
           <span>
             <span
@@ -28,21 +30,22 @@ function Footer() {
                 fontSize: "40px",
               }}
             >
-              CHECK
+              CHECK.
             </span>
           </span>
           <img
-            src={greencheck}
+            src={lc2}
             alt="Logo"
-            height="40"
+            height="80"
             className="d-inline-block align-top"
             style={{
-              marginLeft: "5px",
+              marginLeft: "0px",
               cursor: "pointer",
               verticalAlign: "middle",
             }}
           />
         </h1>
+        </Link>
       </div>
 
       <div className="row">
