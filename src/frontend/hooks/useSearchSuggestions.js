@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { lowerizeAndCheckIncludes, wait } from '../utils/utils';
+import {  wait } from '../utils/utils';
 import {
   DELAY_BETWEEN_BLUR_AND_CLICK,
   DELAY_DEBOUNCED_MS,

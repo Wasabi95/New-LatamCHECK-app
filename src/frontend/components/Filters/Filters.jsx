@@ -1,5 +1,5 @@
-import { FaStar } from 'react-icons/fa';
-import { giveUniqueLabelFOR, midValue, toastHandler } from '../../utils/utils';
+
+import { giveUniqueLabelFOR, toastHandler } from '../../utils/utils';
 import styles from './Filters.module.css';
 
 import { useFiltersContext } from '../../contexts/FiltersContextProvider';
@@ -7,11 +7,11 @@ import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
 import { MdClose } from 'react-icons/md';
 import {
   FILTER_INPUT_TYPE,
-  SORT_TYPE,
+ 
   ToastType,
-  RATINGS,
+ 
 } from '../../constants/constants';
-import { Slider } from '@mui/material';
+
 
 const Filters = ({
   isFilterContainerVisible,
@@ -19,11 +19,7 @@ const Filters = ({
   isMobile,
 }) => {
   const {
-    minPrice: minPriceFromContext,
-    maxPrice: maxPriceFromContext,
-    filters,
-    updateFilters,
-    updatePriceFilter,
+    filters,   
     updateCategoryFilter,
     clearFilters,
   } = useFiltersContext();
@@ -31,18 +27,11 @@ const Filters = ({
   const { products: productsFromProductContext } = useAllProductsContext();
 
   const {
-    category: categoryFromContext,
-    company: companyFromContext,
-    price: priceFromContext,
-    rating: ratingFromContext,
-    sortByOption: sortByOptionFromContext,
+    category: categoryFromContext,  
   } = filters;
 
   const categoriesList = [
     ...new Set(productsFromProductContext.map((product) => product.category)),
-  ];
-  const companiesList = [
-    ...new Set(productsFromProductContext.map((product) => product.company)),
   ];
 
   const handleClearFilter = () => {

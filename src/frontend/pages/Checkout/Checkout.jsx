@@ -29,10 +29,11 @@ const Checkout = () => {
     if (isCartEmpty && !isCheckoutSuccess) {
       navigate('/products');
     }
-  }, [isCartEmpty]);
+  }, [isCartEmpty, isCheckoutSuccess, navigate]);
 
   useEffect(() => {
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       clearTimeout(timer.current);
     };
   }, []);

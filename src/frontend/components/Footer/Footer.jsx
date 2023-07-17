@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import greencheck from "./images/greencheck.png";
 import lc2 from "./images/lc2.png"
 import '@fortawesome/fontawesome-free/css/all.css';
 

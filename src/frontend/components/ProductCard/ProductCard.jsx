@@ -7,18 +7,12 @@ import {
   EmailShareButton,
 } from 'react-share';
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-import {
-  AiFillCheckCircle,
-  AiFillHeart,
-  AiFillStar,
-  AiOutlineHeart,
-} from 'react-icons/ai';
+
 import styles from './ProductCard.module.css';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import Price from '../Price';
+import { Link, useLocation } from 'react-router-dom';
+
 import {
-  LOGIN_TOAST,
-  calculateDiscountPercent,
+ 
   isPresent,
 } from '../../utils/utils';
 import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
@@ -26,26 +20,22 @@ import { useAuthContext } from '../../contexts/AuthContextProvider';
 import { useState } from 'react';
 
 const ProductCard = ({ product }) => {
-  const navigate = useNavigate();
   const location = useLocation();
   const isCardInWishlistPage = location.pathname === '/wishlist';
 
-  const { user } = useAuthContext();
+  useAuthContext();
   const {
-    wishlist: wishlistFromContext,
-    cart: cartFromContext,
-    addToCartDispatch,
-    moveToCartDispatch,
-    addToWishlistDispatch,
-    removeFromWishlistDispatch,
+    cart: cartFromContext,   
+   
   } = useAllProductsContext();
 
   const { colors, stock } = product;
   const inStock = stock > 0;
 
-  const [activeColorObj, setActiveColorObj] = useState(colors[0]);
+  const [activeColorObj] = useState(colors[0]);
 
-  const [isBothDisable, setIsBothBtnDisable] = useState(false);
+  // eslint-disable-next-line no-empty-pattern
+  const [] = useState(false);
 
   const isProductInCart = isPresent(
     isCardInWishlistPage
@@ -54,83 +44,10 @@ const ProductCard = ({ product }) => {
     cartFromContext
   );
 
-  const isProductInWishlist = isPresent(
-    isCardInWishlistPage
-      ? product._id
-      : `${product._id}${activeColorObj.color}`,
-    wishlistFromContext
-  );
-
-  // If card is in wishlist page & product is in cartContext show- "go to cart" else show 'move to cart'
-
-  // In productListing page, if this product is in cart- "go to cart" else show 'add to cart'
-  let productBtnText = isCardInWishlistPage ? 'move to cart' : 'add to cart';
 
   if (isProductInCart) {
-    productBtnText = 'go to cart';
   }
 
-  const discountPercent = calculateDiscountPercent(
-    product.price,
-    product.originalPrice
-  );
-
-  // functions
-
-  // this is accepting dispatch functions on conditonal basis depending on the page
-  const handleCartBtnClick = async (dispatchFunction) => {
-    // for wishlist page, there will be a user always
-
-    if (!user) {
-      LOGIN_TOAST();
-      navigate('/login', { state: { from: location.pathname } });
-      return;
-    }
-
-    if (isProductInCart) {
-      navigate('/cart');
-      return;
-    }
-
-    setIsBothBtnDisable(true);
-    // dispatch function takes a product
-    await dispatchFunction({
-      ...product,
-      _id: isCardInWishlistPage
-        ? product._id
-        : `${product._id}${activeColorObj.color}`,
-      colors: [activeColorObj],
-    });
-    setIsBothBtnDisable(false);
-  };
-
-  const handleWishlistBtnClick = async () => {
-    if (!user) {
-      LOGIN_TOAST();
-      navigate('/login', { state: { from: location.pathname } });
-      return;
-    }
-
-    setIsBothBtnDisable(true);
-
-    if (isProductInWishlist) {
-      // delete from wishlist
-      await removeFromWishlistDispatch(
-        isCardInWishlistPage
-          ? product._id
-          : `${product._id}${activeColorObj.color}`
-      );
-      setIsBothBtnDisable(false);
-      return;
-    }
-
-    await addToWishlistDispatch({
-      ...product,
-      _id: `${product._id}${activeColorObj.color}`,
-      colors: [activeColorObj],
-    });
-    setIsBothBtnDisable(false);
-  };
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);

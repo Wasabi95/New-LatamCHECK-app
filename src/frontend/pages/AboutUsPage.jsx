@@ -1,14 +1,12 @@
-import { useEffect, useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import {  useParams } from 'react-router-dom';
 import Navbar  from '../../frontend/components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import "./AboutUsPage.css"
 
 
 const AboutUsPage = () => {
-  const { productId } = useParams();  
-  const navigate = useNavigate();
-  const location = useLocation();
+  useParams();  
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page when the component mounts

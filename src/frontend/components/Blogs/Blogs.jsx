@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+/* import axios from 'axios'; */
 import "./Blogs.css";
 import { Link } from "react-router-dom";
 import { products } from "../../../backend/db/products"
@@ -32,8 +32,8 @@ function Blogs() {
             {/* Render most read articles */}
             {mostReadArticles.map((article) => (
               <div className="article" key={article._id}>
-                <img className="image" src={article.image} alt={`Image ${article._id}`} />
-                <div>
+              <img className="image" src={article.image} alt={`Article ${article._id}`} />
+              <div>
                   <h4>{article.name}</h4>
                   <p>{truncateText(article.description, 200)}</p>
                 </div>
@@ -48,28 +48,28 @@ function Blogs() {
             {/* Existing blog articles */}
             <Link to="/blog1">
               <div className="article">
-                <img className="image" src="https://helios-i.mashable.com/imagery/articles/07H0JDqdjqv7Q73TwDk3lJK/hero-image.fill.size_1200x675.v1687880371.jpg" alt="Image 1" />
+                <img className="image" src="https://helios-i.mashable.com/imagery/articles/07H0JDqdjqv7Q73TwDk3lJK/hero-image.fill.size_1200x675.v1687880371.jpg" alt="Deepfakes" />
                 <div>
                   <h4>{truncateText("What are deepfakes? How to spot them?", 50)}</h4>
-                  <p>{truncateText("AI-generated fake nerated fake videos are becoming more common (and convincing). Here’s why we should be worri videos are becoming more common (and convincing). Here’s why we should be worried, Have you seen Barack Obama call Donald Trump a “complete dipshit”?", 200)}</p>
+                  <p>{truncateText("AI-generated fake videos are becoming more common (and convincing). Here’s why we should be worried. Have you seen Barack Obama call Donald Trump a 'complete dipshit'?", 200)}</p>
                 </div>
               </div>
             </Link>
             <Link to="/blog2">
               <div className="article">
-                <img className="image" src="https://www.ilounge.com/wp-content/uploads/2020/02/Spam-Phishing-and-Clickbait-An-Overview-of-Internet-Scams.jpg" alt="Image 2" />
+                <img className="image" src="https://www.ilounge.com/wp-content/uploads/2020/02/Spam-Phishing-and-Clickbait-An-Overview-of-Internet-Scams.jpg" alt="Clickbaits" />
                 <div>
                   <h4>How to spot Clickbaits?</h4>
-                  <p>{truncateText("AI-generated fake nerated fake videos are becoming more common (and convincing). Here’s why we should be worri videos are becoming more common (and convincing). Here’s why we should be worried, Have you seen Barack Obama call Donald Trump a “complete dipshit”?", 200)}</p>
+                  <p>{truncateText("AI-generated fake videos are becoming more common (and convincing). Here’s why we should be worried. Have you seen Barack Obama call Donald Trump a 'complete dipshit'?", 200)}</p>
                 </div>
               </div>
             </Link>
             <Link to="/blog3">
               <div className="article">
-                <img className="image" src="https://images.pexels.com/photos/268460/pexels-photo-268460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3" />
+                <img className="image" src="https://images.pexels.com/photos/268460/pexels-photo-268460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Popular Hoax" />
                 <div>
-                  <h4>Most popular HOAX on internet.</h4>
-                  <p>{truncateText("AI-generated fake nerated fake videos are becoming more common (and convincing). Here’s why we should be worri videos are becoming more common (and convincing). Here’s why we should be worried, Have you seen Barack Obama call Donald Trump a “complete dipshit”?", 200)}</p>
+                  <h4>Most popular HOAX on the internet.</h4>
+                  <p>{truncateText("AI-generated fake videos are becoming more common (and convincing). Here’s why we should be worried. Have you seen Barack Obama call Donald Trump a 'complete dipshit'?", 200)}</p>
                 </div>
               </div>
             </Link>
@@ -82,3 +82,4 @@ function Blogs() {
 }
 
 export default Blogs;
+
