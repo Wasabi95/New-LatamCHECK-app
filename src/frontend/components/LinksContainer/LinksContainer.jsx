@@ -2,7 +2,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './LinksContainer.module.css';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { useAuthContext } from '../../contexts/AuthContextProvider';
 import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
 import ItemCount from './ItemCount';
 

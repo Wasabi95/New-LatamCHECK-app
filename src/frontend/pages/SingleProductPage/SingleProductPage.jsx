@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getSingleProductService } from '../../Services/services';
@@ -24,7 +25,7 @@ const SingleProductPage = () => {
   });
 
   const [activeColorObj, setActiveColorObj] = useState(null);
-  const [isWishlistBtnDisable, setIsWishlistBtnDisable] = useState(false);
+  const [setIsWishlistBtnDisable] = useState(false);
   const [isCartBtnDisable, setIsCartBtnDisable] = useState(false);
 
   const fetchSingleProduct = async () => {
@@ -79,20 +80,16 @@ const SingleProductPage = () => {
     image,
     description,
     category,
-    stock,
     afirmacion,
     analisis,
     veredicto,
   } = singleProductData;
 
   const discountPercent = calculateDiscountPercent(price, originalPrice);
-  const inStock = stock > 0;
-
   const isSinglePageProductInCart = isPresent(
     `${singlePageProductId}${activeColorObj?.color}`,
     cartFromContext
   );
-
   const isSinglePageProductInWishlist = isPresent(
     `${singlePageProductId}${activeColorObj?.color}`,
     wishlistFromContext
@@ -163,4 +160,5 @@ const SingleProductPage = () => {
 };
 
 export default SingleProductPage;
+
 

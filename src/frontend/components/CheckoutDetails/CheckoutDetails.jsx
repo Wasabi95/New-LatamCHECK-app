@@ -22,7 +22,6 @@ const CheckoutDetails = ({
       totalCount: totalCountFromContext,
     },
     addressList: addressListFromContext,
-    cart: cartFromContext,
     clearCartDispatch,
     // addOrderDispatch,
   } = useAllProductsContext();
