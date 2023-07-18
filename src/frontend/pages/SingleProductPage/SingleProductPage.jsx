@@ -1,21 +1,24 @@
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getSingleProductService } from '../../Services/services';
 import styles from './SingleProductPage.module.css';
 import { Error } from '../../components';
-import { calculateDiscountPercent, isPresent } from '../../utils/utils';
 import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  EmailShareButton,
+} from 'react-share';
+import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const SingleProductPage = () => {
   const { productId } = useParams();
   const {
-    wishlist: wishlistFromContext,
-    cart: cartFromContext,
     showMainPageLoader,
     hideMainPageLoader,
-    addToCartDispatch,
-    addToWishlistDispatch,
+    // addToCartDispatch,
+    // addToWishlistDispatch,
   } = useAllProductsContext();
 
   const [singleProductState, setSingleProductState] = useState({
@@ -24,9 +27,8 @@ const SingleProductPage = () => {
     isSinglePageError: false,
   });
 
-  const [activeColorObj, setActiveColorObj] = useState(null);
-  const [setIsWishlistBtnDisable] = useState(false);
-  const [isCartBtnDisable, setIsCartBtnDisable] = useState(false);
+  const [, setActiveColorObj] = useState(null);
+  // const [isCartBtnDisable] = useState(false);
 
   const fetchSingleProduct = async () => {
     setSingleProductState({ ...singleProductState, isSinglePageLoading: true });
@@ -73,57 +75,83 @@ const SingleProductPage = () => {
   }
 
   const {
-    _id: singlePageProductId,
     name,
-    price,
-    originalPrice,
+    // price,
+    // originalPrice,
     image,
     description,
     category,
     afirmacion,
     analisis,
     veredicto,
+    status,
+    date,
   } = singleProductData;
 
-  const discountPercent = calculateDiscountPercent(price, originalPrice);
-  const isSinglePageProductInCart = isPresent(
-    `${singlePageProductId}${activeColorObj?.color}`,
-    cartFromContext
-  );
-  const isSinglePageProductInWishlist = isPresent(
-    `${singlePageProductId}${activeColorObj?.color}`,
-    wishlistFromContext
-  );
+  // const discountPercent = calculateDiscountPercent(price, originalPrice);
+  // const isSinglePageProductInCart = isPresent(
+  //   `${singlePageProductId}${activeColorObj?.color}`,
+  //   cartFromContext
+  // );
+  // const isSinglePageProductInWishlist = isPresent(
+  //   `${singlePageProductId}${activeColorObj?.color}`,
+  //   wishlistFromContext
+  // );
 
-  const handleCartBtnClick = async () => {
-    if (isSinglePageProductInCart) {
-      // Handle cart button click when product is already in cart
+  // const handleCartBtnClick = async () => {
+  //   if (isSinglePageProductInCart) {
+  //     // Handle cart button click when product is already in cart
+  //   } else {
+  //     setIsCartBtnDisable(true);
+  //     await addToCartDispatch({
+  //       ...singleProductData,
+  //       _id: `${singleProductData._id}${activeColorObj.color}`,
+  //       colors: [activeColorObj],
+  //     });
+  //     setIsCartBtnDisable(false);
+  //   }
+  // };
+
+  // const handleWishlistBtnClick = async () => {
+  //   if (isSinglePageProductInWishlist) {
+  //     // Handle wishlist button click when product is already in wishlist
+  //   } else {
+  //     setIsCartBtnDisable(true);
+  //     await addToWishlistDispatch({
+  //       ...singleProductData,
+  //       _id: `${singleProductData._id}${activeColorObj.color}`,
+  //       colors: [activeColorObj],
+  //     });
+  //     setIsCartBtnDisable(false);
+  //   }
+  // };
+
+  // const handleColorClick = (colorData) => setActiveColorObj(colorData);
+
+  const getStatusColor = (status) => {
+    if (status === 'FALSO') {
+      return styles.statusRed;
+    } else if (status === 'VERDADERO') {
+      return styles.statusGreen;
+    } else if (status === 'PARCIAL') {
+      return styles.statusOrange;
     } else {
-      setIsCartBtnDisable(true);
-      await addToCartDispatch({
-        ...singleProductData,
-        _id: `${singleProductData._id}${activeColorObj.color}`,
-        colors: [activeColorObj],
-      });
-      setIsCartBtnDisable(false);
+      return '';
     }
   };
 
-  const handleWishlistBtnClick = async () => {
-    if (isSinglePageProductInWishlist) {
-      // Handle wishlist button click when product is already in wishlist
-    } else {
-      setIsWishlistBtnDisable(true);
-      await addToWishlistDispatch({
-        ...singleProductData,
-        _id: `${singleProductData._id}${activeColorObj.color}`,
-        colors: [activeColorObj],
-      });
-      setIsWishlistBtnDisable(false);
-    }
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+      timeZone: 'UTC',
+    };
+    return date.toLocaleDateString('en-US', options);
   };
 
-  const handleColorClick = (colorData) => setActiveColorObj(colorData);
+  const shareUrl = window.location.href;
 
   return (
     <main className={`container half-page ${styles.productPageCenter}`}>
@@ -133,6 +161,31 @@ const SingleProductPage = () => {
 
       <div className={styles.productContent}>
         <h3 className='primary-color-text'>{name}</h3>
+        
+        <span className={`product-status ${getStatusColor(status)}`}>
+          {status}
+        </span>
+        <div className={styles.row}>
+          <span>Category:</span>
+          <p>{category}</p>
+        </div>
+        <p className="product-date">{formatDate(date)}</p>
+        
+        <div className={styles.socialSharing}>
+          <FacebookShareButton url={shareUrl}>
+            <FaFacebook className={styles.facebookIcon} />
+          </FacebookShareButton>
+          <LinkedinShareButton url={shareUrl}>
+            <FaLinkedin className={styles.linkedinIcon} />
+          </LinkedinShareButton>
+          <TwitterShareButton url={shareUrl}>
+            <FaTwitter className={styles.twitterIcon} />
+          </TwitterShareButton>
+          <EmailShareButton url={shareUrl}>
+            <FaEnvelope className={styles.emailIcon} />
+          </EmailShareButton>
+        </div>
+
         <p className={styles.desc}>{description}</p>
 
         <div className={styles.row}>
@@ -148,17 +201,16 @@ const SingleProductPage = () => {
           <p className={styles.veredicto}>{veredicto}</p>
         </div>
 
-        <div className={styles.row}>
-          <span>Category:</span>
-          <p>{category}</p>
-        </div>
-
+      
         <hr />
+
       </div>
     </main>
   );
 };
 
 export default SingleProductPage;
+
+
 
 

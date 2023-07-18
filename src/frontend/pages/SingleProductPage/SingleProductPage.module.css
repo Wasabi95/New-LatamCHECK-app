@@ -124,6 +124,77 @@
   margin-bottom: 1rem;
 }
 
+
+/* SingleProductPage.module.css */
+
+/* .product-status {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+} */
+
+
+
+
+
+.statusRed {
+  background-color: red;
+  border-color: red; /* add this line to set the border color for "FALSO" */
+  color: white;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.95rem;
+  border-radius: 9px;
+}
+
+.statusGreen {
+  background-color: green;
+  border-color: green; 
+  color: white;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.95rem;
+  border-radius: 9px;
+}
+
+.statusOrange {
+  background-color: orange;
+  border-color: orange; 
+  color: white;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.95rem;
+  border-radius: 9px;
+}
+/* SingleProductPage.module.css */
+
+/* SingleProductPage.module.css */
+
+.socialSharing {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.facebookIcon,
+.linkedinIcon,
+.twitterIcon,
+.emailIcon {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.facebookIcon:hover,
+.linkedinIcon:hover,
+.twitterIcon:hover,
+.emailIcon:hover {
+  color: blue; /* Update with the desired hover color */
+}
+
+
+
 @media screen and (min-width: 768px) {
   .productPageCenter {
     display: grid;

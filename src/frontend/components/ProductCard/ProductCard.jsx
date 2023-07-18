@@ -1,5 +1,3 @@
-
-
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -7,12 +5,9 @@ import {
   EmailShareButton,
 } from 'react-share';
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-
 import styles from './ProductCard.module.css';
 import { Link, useLocation } from 'react-router-dom';
-
-import {
- 
+import { 
   isPresent,
 } from '../../utils/utils';
 import { useAllProductsContext } from '../../contexts/ProductsContextProvider';

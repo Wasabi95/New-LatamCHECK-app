@@ -10,28 +10,7 @@ function Footer() {
       <div className="header footer-n">
       <Link to="/">
         <h1>
-          <span>
-            <span
-              style={{
-                fontFamily: "Raleway",
-                color: "#e94272",
-                fontWeight: "900",
-                fontSize: "40px",
-              }}
-            >
-              Latam
-            </span>
-            <span
-              style={{
-                fontFamily: "Roboto",
-                color: "white",
-                fontWeight: "900",
-                fontSize: "40px",
-              }}
-            >
-              CHECK.
-            </span>
-          </span>
+        <span>
           <img
             src={lc2}
             alt="Logo"
@@ -39,10 +18,33 @@ function Footer() {
             className="d-inline-block align-top"
             style={{
               marginLeft: "0px",
+              marginRight: "-15px", 
               cursor: "pointer",
               verticalAlign: "middle",
             }}
           />
+          <span
+            style={{
+              fontFamily: "Raleway",
+              color: "white",
+              fontWeight: "300",
+              fontSize: "25px",
+              marginLeft: "1px", 
+            }}
+          >
+            Latam
+          </span>
+          <span
+            style={{
+              fontFamily: "Roboto",
+              color: "#e94272",
+              fontWeight: "900",
+              fontSize: "25px",
+            }}
+          >
+            CHECK.
+          </span>
+        </span>         
         </h1>
         </Link>
       </div>
