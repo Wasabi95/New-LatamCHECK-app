@@ -6,7 +6,7 @@ import errorImg from '../../assets/404-error.png';
 const Error = ({ errorText }) => {
   return (
     <div className={`half-page container ${styles.error}`}>
-      <h3>{errorText}</h3>
+      <h3>Error: No se encontro este articulo</h3>
 
       <div className={styles.imgContainer}>
         <img src={errorImg} alt='error' />

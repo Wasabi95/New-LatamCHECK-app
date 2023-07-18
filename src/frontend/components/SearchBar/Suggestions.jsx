@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import Price from '../Price';
 import styles from './SearchBar.module.css';
 
 const Suggestions = ({
@@ -49,7 +48,7 @@ const Suggestions = ({
           key={item._id}
         >
           <p>🔍 {item.name}</p>
-          <Price amount={item.price} />
+        
         </button>
       ))}
     </section>

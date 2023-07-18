@@ -75,11 +75,8 @@ const SingleProductPage = () => {
   }
 
   const {
-    name,
-    // price,
-    // originalPrice,
-    image,
-    description,
+    name,   
+    image,    
     category,
     afirmacion,
     analisis,
@@ -88,45 +85,6 @@ const SingleProductPage = () => {
     date,
   } = singleProductData;
 
-  // const discountPercent = calculateDiscountPercent(price, originalPrice);
-  // const isSinglePageProductInCart = isPresent(
-  //   `${singlePageProductId}${activeColorObj?.color}`,
-  //   cartFromContext
-  // );
-  // const isSinglePageProductInWishlist = isPresent(
-  //   `${singlePageProductId}${activeColorObj?.color}`,
-  //   wishlistFromContext
-  // );
-
-  // const handleCartBtnClick = async () => {
-  //   if (isSinglePageProductInCart) {
-  //     // Handle cart button click when product is already in cart
-  //   } else {
-  //     setIsCartBtnDisable(true);
-  //     await addToCartDispatch({
-  //       ...singleProductData,
-  //       _id: `${singleProductData._id}${activeColorObj.color}`,
-  //       colors: [activeColorObj],
-  //     });
-  //     setIsCartBtnDisable(false);
-  //   }
-  // };
-
-  // const handleWishlistBtnClick = async () => {
-  //   if (isSinglePageProductInWishlist) {
-  //     // Handle wishlist button click when product is already in wishlist
-  //   } else {
-  //     setIsCartBtnDisable(true);
-  //     await addToWishlistDispatch({
-  //       ...singleProductData,
-  //       _id: `${singleProductData._id}${activeColorObj.color}`,
-  //       colors: [activeColorObj],
-  //     });
-  //     setIsCartBtnDisable(false);
-  //   }
-  // };
-
-  // const handleColorClick = (colorData) => setActiveColorObj(colorData);
 
   const getStatusColor = (status) => {
     if (status === 'FALSO') {
@@ -186,7 +144,7 @@ const SingleProductPage = () => {
           </EmailShareButton>
         </div>
 
-        <p className={styles.desc}>{description}</p>
+        {/* <p className={styles.desc} dangerouslySetInnerHTML={{ __html: description }}></p> */}
 
         <div className={styles.row}>
           <span>Afirmacion:</span>
@@ -194,7 +152,8 @@ const SingleProductPage = () => {
         </div>
         <div className={styles.row}>
           <span>Analisis:</span>
-          <p className={styles.analisis}>{analisis}</p>
+          <p className={styles.analisis} dangerouslySetInnerHTML={{ __html: analisis }}></p>
+
         </div>
         <div className={styles.row}>
           <span>Veredicto:</span>

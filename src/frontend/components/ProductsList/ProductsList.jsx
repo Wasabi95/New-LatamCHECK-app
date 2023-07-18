@@ -56,7 +56,7 @@ const ProductsList = ({
     // eslint-disable-next-line
   }, [filtersObjFromContext]);
 
-  // if is filtering, show skeleton cards
+  // If filtering, show skeleton cards
   if (isFilterLoading) {
     const skeletons = new Array(TOTAL_SKELETONS_LENGTH).fill(null);
 
@@ -85,13 +85,23 @@ const ProductsList = ({
         {overlayJSXInMobile}
 
         <p className='error-text'>
-          No products matched your filters combination ☹️
+          No hay noticias VERIFICADAS que coincidan con los filtros seleccionados. ☹️
         </p>
 
         {showFilterButtonJSXInMobile}
       </section>
     );
   }
+
+  const PAGE_RANGE = 3; // Maximum number of page buttons to show
+  const ELLIPSIS_THRESHOLD = 3; // Show ellipsis after this page count
+
+  // Calculate the start and end index for the page buttons
+  let startPage = Math.max(0, paginateIndex - Math.floor(PAGE_RANGE / 2));
+  let endPage = Math.min(startPage + PAGE_RANGE - 1, filteredProductsLength - 1);
+  startPage = Math.max(0, endPage - PAGE_RANGE + 1);
+
+  const showEllipsis = filteredProductsLength > ELLIPSIS_THRESHOLD;
 
   return (
     <section className={styles.productListSection}>
@@ -101,8 +111,7 @@ const ProductsList = ({
 
       <header className={styles.listHeader}>
         <p className='primary-color-text font-size-one-half'>
-          {totalProductsLength} Product
-          {totalProductsLength !== 1 && 's'} Found
+          {totalProductsLength} Artículo{totalProductsLength !== 1 && 's'} Encontrado{totalProductsLength !== 1 && 's'}
         </p>
 
         <p className={styles.pageCount}>
@@ -120,38 +129,30 @@ const ProductsList = ({
         <div className={styles.paginateBtnContainer}>
           <button
             className='btn btn-activated'
-            onClick={() =>
-              updatePaginatedIndex(
-                paginateIndex === 0
-                  ? filteredProductsLength - 1
-                  : paginateIndex - 1
-              )
-            }
+            onClick={() => updatePaginatedIndex((paginateIndex - 1 + filteredProductsLength) % filteredProductsLength)}
           >
-            prev
+            Prev
           </button>
 
-          {filteredProducts.map((_, index) => (
+          {Array.from({ length: endPage - startPage + 1 }, (_, index) => startPage + index).map((pageIndex) => (
             <button
-              key={index}
-              className={paginateIndex === index ? 'btn' : 'btn btn-hipster'}
-              onClick={() => updatePaginatedIndex(index)}
+              key={pageIndex}
+              className={paginateIndex === pageIndex ? 'btn' : 'btn btn-hipster'}
+              onClick={() => updatePaginatedIndex(pageIndex)}
             >
-              {index + 1}
+              {pageIndex + 1}
             </button>
           ))}
 
+          {showEllipsis && endPage < filteredProductsLength - 1 && (
+            <span className={styles.ellipsis}>...</span>
+          )}
+
           <button
             className='btn btn-activated'
-            onClick={() =>
-              updatePaginatedIndex(
-                paginateIndex === filteredProductsLength - 1
-                  ? 0
-                  : paginateIndex + 1
-              )
-            }
+            onClick={() => updatePaginatedIndex((paginateIndex + 1) % filteredProductsLength)}
           >
-            next
+            Next
           </button>
         </div>
       )}
@@ -160,3 +161,4 @@ const ProductsList = ({
 };
 
 export default ProductsList;
+

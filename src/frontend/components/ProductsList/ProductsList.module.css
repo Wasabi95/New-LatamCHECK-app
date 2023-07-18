@@ -45,7 +45,7 @@
 .productsCenter {
   display: grid;
   grid-template-columns: 1fr;
-  place-items: center;
+  /* place-items: center; */
   gap: 3rem;
 }
 

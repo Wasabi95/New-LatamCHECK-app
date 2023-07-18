@@ -79,10 +79,11 @@ const ProductCard = ({ product }) => {
       }
     >
       <div className={styles.imgContainer}>
-        <Link to={`/products/${product._id}`}>
-          <img src={product.image} alt={product.name} />
-        </Link>
-      </div>
+  <Link to={`/products/${product._id}`}>
+    <img className={styles.productImage} src={product.image} alt={product.name} />
+  </Link>
+</div>
+
      
 
       <div className={styles.cardInfo}>
