@@ -45,7 +45,7 @@
 .productsCenter {
   display: grid;
   grid-template-columns: 1fr;
-  /* place-items: center; */
+ /*  place-items: center;  */ 
   gap: 3rem;
 }
 
@@ -102,11 +102,17 @@
 
   .productsCenter {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    
   }
 
   .pageCount {
     color: var(--grey-500);
     font-size: 1.15rem;
     letter-spacing: var(--letterSpacing);
+  }
+}
+@media screen and (max-width: 767px) {
+  .productsCenter {
+    justify-items: center; /* Add this line */
   }
 }
