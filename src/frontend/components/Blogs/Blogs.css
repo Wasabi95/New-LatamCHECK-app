@@ -45,7 +45,7 @@
     
       .image {
         width: 100%; /* Image spans the entire width */
-        height: auto;
+        height: 150PX;
         margin-right: 0;
         margin-bottom: 10px;
       }
