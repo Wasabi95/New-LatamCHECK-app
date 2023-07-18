@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { getSingleProductService } from '../../Services/services';
-import styles from './SingleProductPage.module.css';
-import { Error } from '../../components';
-import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getSingleProductService } from "../../Services/services";
+import styles from "./SingleProductPage.module.css";
+import { Error } from "../../components";
+import { useAllProductsContext } from "../../contexts/ProductsContextProvider";
 import {
   FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
   EmailShareButton,
-} from 'react-share';
-import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+} from "react-share";
+import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 const SingleProductPage = () => {
   const { productId } = useParams();
@@ -67,16 +67,16 @@ const SingleProductPage = () => {
     singleProductState;
 
   if (isSinglePageLoading) {
-    return <main className='full-page'></main>;
+    return <main className="full-page"></main>;
   }
 
   if (isSinglePageError) {
-    return <Error errorText='Error: Product Not Found' />;
+    return <Error errorText="Error: Product Not Found" />;
   }
 
   const {
-    name,   
-    image,    
+    name,
+    image,
     category,
     afirmacion,
     analisis,
@@ -85,28 +85,27 @@ const SingleProductPage = () => {
     date,
   } = singleProductData;
 
-
   const getStatusColor = (status) => {
-    if (status === 'FALSO') {
+    if (status === "FALSO") {
       return styles.statusRed;
-    } else if (status === 'VERDADERO') {
+    } else if (status === "VERDADERO") {
       return styles.statusGreen;
-    } else if (status === 'PARCIAL') {
+    } else if (status === "PARCIAL") {
       return styles.statusOrange;
     } else {
-      return '';
+      return "";
     }
   };
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     const options = {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric',
-      timeZone: 'UTC',
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+      timeZone: "UTC",
     };
-    return date.toLocaleDateString('en-US', options);
+    return date.toLocaleDateString("en-US", options);
   };
 
   const shareUrl = window.location.href;
@@ -118,8 +117,8 @@ const SingleProductPage = () => {
       </div>
 
       <div className={styles.productContent}>
-        <h3 className='primary-color-text'>{name}</h3>
-        
+        <h3 className="primary-color-text">{name}</h3>
+
         <span className={`product-status ${getStatusColor(status)}`}>
           {status}
         </span>
@@ -128,7 +127,7 @@ const SingleProductPage = () => {
           <p>{category}</p>
         </div>
         <p className="product-date">{formatDate(date)}</p>
-        
+
         <div className={styles.socialSharing}>
           <FacebookShareButton url={shareUrl}>
             <FaFacebook className={styles.facebookIcon} />
@@ -152,24 +151,23 @@ const SingleProductPage = () => {
         </div>
         <div className={styles.row}>
           <span>Analisis:</span>
-          <p className={styles.analisis} dangerouslySetInnerHTML={{ __html: analisis }}></p>
-
+          <p
+            className={styles.analisis}
+            dangerouslySetInnerHTML={{ __html: analisis }}
+          ></p>
         </div>
         <div className={styles.row}>
           <span>Veredicto:</span>
-          <p className={styles.veredicto}>{veredicto}</p>
+          <p
+            className={styles.veredicto}
+            dangerouslySetInnerHTML={{ __html: veredicto }}
+          ></p>
         </div>
 
-      
         <hr />
-
       </div>
     </main>
   );
 };
 
 export default SingleProductPage;
-
-
-
-
