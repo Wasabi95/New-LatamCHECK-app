@@ -78,7 +78,7 @@
   align-items: center;
   gap: 0 1rem;
   margin: 0.5rem 0;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .row span {
