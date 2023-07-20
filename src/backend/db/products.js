@@ -2,8 +2,96 @@ import { v4 as uuid } from "uuid";
 import OTAN from "./imagery/otan.png";
 import CRYPTO from "./imagery/crypto.png";
 import GATES from "./imagery/geogates.png";
+import DESANTIS from "./imagery/santisptorico.png";
+import PAPAFRANCISCO from "./imagery/papafrancisco1.png";
 
 export const products = [
+   {
+    _id: uuid(),
+    name: "El Papa Francisco usando una chaqueta oversize de color blanco y una cruz grande al cuello",
+    date: new Date("2023-04-5").toISOString(),
+    tags: ["Papa", "Moda", "Francisco", "Chaqueta", "Chaqueta Blanca", "abrigo", "Jacket","cruz"],
+    status: "FALSO",
+    category: 'Resto del Mundo',
+    afirmacion: "El Papa Francisco luce una chaqueta demasiado grande de color blanco, con una cruz como accesorio.",
+
+    analisis: 'Imagen viral del Papa Francisco en las redes sociales debido a su llamativo atuendo. La foto lo muestra usando una chaqueta blanca de gran tamaño con una cruz como accesorio. <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/groups/officialmidjourney/posts/540709221553980" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Facebook</a></em>. Luego de utilizar la técnica de búsqueda inversa de imágenes, se encontró que la imagen fue alterada para representar al Papa Francisco con una chaqueta blanca de Balenciaga de gran tamaño con una cruz, esta animación fue hecha por el programa y servicio de inteligencia artificial generativa <em><a target="_blank" rel="noreferrer" href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Midjourney</a></em>.',
+    
+    veredicto: 'Esta publicación es FALSA. En ocasiones, las imágenes pueden ser manipuladas o sacadas de contexto, por lo que es importante ser cauteloso y verificar la autenticidad de la imagen antes de sacar conclusiones.',
+    
+    image: PAPAFRANCISCO,
+    description:
+      'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  },
+  {
+    _id: uuid(),
+    name: "El gobernador de Florida, EE.UU., Ron DeSantis, firmó una ley que restringe la exhibición de la bandera de Puerto Rico en público",
+    date: new Date("2023-06-15").toISOString(),
+    tags: [
+      "DeSantis",
+      "Falso",
+      "Puerto Rico",
+      "Bandera",
+      "Ley",
+      "Florida",
+      "HB-1011",
+      "SB-668",
+    ],
+    status: "FALSO",
+    category: "Estados Unidos",
+    afirmacion:
+      "Gobernador DeSantis firmó ley que prohíbe izar la bandera de Puerto Rico en público en Florida, Estados Unidos",
+    analisis:
+      'Una publicación que circula en <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@jonathanacosta2020/video/7236388577154780459?q=desantis%20puerto%20rican%20flag&t=1689797650742/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Tiktok</a></em> afirma falsamente que el gobernador Ron DeSantis firmó una ley para prohibir izar la bandera de Puerto Rico en Florida.<br/> No existe una ley específica en Florida que prohíba por completo la bandera puertorriqueña o cualquier otra bandera específica. La libertad de exhibir banderas, incluida la bandera puertorriqueña, generalmente está protegida por <em><a target="_blank" rel="noreferrer" href="https://es.wikipedia.org/wiki/Primera_Enmienda_a_la_Constituci%C3%B3n_de_los_Estados_Unidos" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> la Primera Enmienda de la Constitución de los Estados Unidos</a></em> que garantiza el derecho a la libertad de expresión.<br/> <br/> Los legisladores de Florida intentaron introducir los proyectos de <em><a target="_blank" rel="noreferrer" href="https://www.flsenate.gov/Session/Bill/2023/668/?Tab=BillHistory" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>ley SB 668 en el Senado</a></em> y <em><a target="_blank" rel="noreferrer" href="https://www.flsenate.gov/Session/Bill/2023/1011/?Tab=BillText" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>HB 1011 en la Cámara de Representante</a></em>, relacionados con la exhibición de banderas "no autorizadas" en edificios públicos en Florida, pero no tuvieron éxito y no fueron aprobados en ninguna de las dos cámaras legislativas. Por lo tanto, estos proyectos de ley no se convirtieron en leyes en Florida y no fueron implementados.  ',
+
+    veredicto:
+      "Esta información es FALSA, ya que no existe una restricción oficial en vigor para mostrar la bandera puertorriqueña en Florida y no está informado por fuentes confiables. <br/> Sin embargo, es importante tener en cuenta que puede haber regulaciones o pautas con respecto a la exhibición de banderas en contextos específicos, como edificios gubernamentales o espacios públicos. Esta normativa tiene como objetivo mantener el orden y garantizar que las exhibiciones sean respetuosas y acordes con los protocolos establecidos.",
+    image: DESANTIS,
+    description:
+      'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  },
   {
     _id: uuid(),
     name: "Putin ha sido derrotado y la OTAN admite a Ucrania como miembro",
