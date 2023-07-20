@@ -4,9 +4,83 @@ import CRYPTO from "./imagery/crypto.png";
 import GATES from "./imagery/geogates.png";
 import DESANTIS from "./imagery/santisptorico.png";
 import PAPAFRANCISCO from "./imagery/papafrancisco1.png";
+import MIKEPENCE from "./imagery/MikePenceglobos.png";
+import LUCASVILLA from "./imagery/LucasVilla.png";
 
 export const products = [
    {
+    _id: uuid(),
+    name: "Lucas Villa Vásquez fue asesinado por vínculos con el microtráfico",
+    date: new Date("2023-07-25").toISOString(),
+    tags: ["Lucas Villa", "asesinado", "protestas", "microtráfico", "Paro nacional", "Colombia", "estallido social", "muerte"],
+    status: "FALSO",
+    category: 'América Latina',
+    afirmacion: "Lucas Villa Vásquez fue asesinado durante el Paro Nacional de 2021 en Colombia, por problemas relacionados con el microtráfico de drogas.",
+
+    analisis: 'Una publicación en <em><a target="_blank" rel="noreferrer" href="https://twitter.com/pacormolina/status/1679648089974374400" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Twitter</a></em> afirma falsamente que la causa de la muerte del líder estudiantil Lucas Villa Vásquez, ocurrida el 11 de mayo de 2021 en Pereira durante el Paro Nacional de Colombia, por motivos de la reforma tributaria presentada por el gobierno del entonces presidente  Iván Duque, fue debido a problemas con el microtráfico de drogas. Sin embargo, el 13 de Julio de 2023, la Fiscalía de Colombia informó a través de <em><a target="_blank" rel="noreferrer" href=https://www.fiscalia.gov.co/colombia/noticias/cae-uno-de-los-presuntos-articuladores-del-crimen-del-lider-estudiantil-lucas-villa-vasquez/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Boletín 49254</a></em> que capturaron a Jonatan Stiven Mejía Hurtado, alias Truan, jefe de la organización delincuencial ‘La Cordillera’, quien está posiblemente vinculado con el crimen que resultó en la muerte de Lucas Villa Vásquez y que operan en Dosquebradas, Risaralda. Según la evidencia presentada por la Fiscalía, parece que los líderes principales de “La Cordillera” creían que las acciones de bloqueo de las vías por las marchas del líder estudiantil durante las protestas estaban perjudicando los intereses del grupo ilegal.',
+
+    veredicto: "Esta información es FALSA, ya que, según la información de las autoridades, no hay ninguna relación con actividades ilegales por parte del líder estudiantil Lucas Villa Vásquez.",
+    image: LUCASVILLA,
+    description:
+      'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  },
+   {
+    _id: uuid(),
+    name: "Mike Pence es golpeado por una niña con un globo de agua durante un desfile",
+    date: new Date("2023-07-25").toISOString(),
+    tags: ["Mike Pence", "Globos", "Desfile", "Problemas", "niños"],
+    status: "FALSO",
+    category: 'Estados Unidos',
+    afirmacion: "El candidato demócrata presidencial Mike Pence fue golpeado por una niña con un globo de agua durante un desfile local en celebración del día de la Independencia en Stewart Manor, Nueva York.",
+    analisis: 'Un video que circula en <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/watch/?v=1372355206644027" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Facebook</a></em> afirma falsamente que el candidato demócrata presidencial Mike Pence fue golpeado por una niña con un globo de agua durante un desfile local en celebración del día de la Independencia en Stewart Manor, Nueva York.<br/><br/>De acuerdo con el comentario hecho a través de su página de Facebook, <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/BruceBlakemanNCExec" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Bruce Blakeman</a></em>, el abogado y político estadounidense que actualmente se desempeña como décimo ejecutivo del condado de Nassau, Nueva York, afirmó que fue él quien recibió el globo de agua durante la celebración.',
+    veredicto: 'Esta información es FALSA. Ya que fue el político Bruce Blakeman del condado de Nassau, Nueva York, quien recibió el golpe durante el tradicional desfile de globos de agua en Stewart Manor, no Mike Pence.',
+    image: MIKEPENCE,
+    description:
+      'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  },
+  {
     _id: uuid(),
     name: "El Papa Francisco usando una chaqueta oversize de color blanco y una cruz grande al cuello",
     date: new Date("2023-04-5").toISOString(),
@@ -130,7 +204,7 @@ export const products = [
     reviewCount: 418,
     stars: 3.7,
   },
-
+  
   {
     _id: uuid(),
     name: "Mediante orden ejecutiva EO-14067, Biden convierte el dolar en una criptomoneda",
@@ -1706,5 +1780,18 @@ export const products = [
     reviewCount: 418,
     stars: 3.7,
   },
-];
+  ];
 products.sort((a, b) => new Date(b.date) - new Date(a.date));
+  
+
+  
+  
+
+  
+  
+  
+  
+   
+  
+  
+
