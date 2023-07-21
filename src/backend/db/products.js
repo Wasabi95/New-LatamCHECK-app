@@ -6,8 +6,50 @@ import DESANTIS from "./imagery/santisptorico.png";
 import PAPAFRANCISCO from "./imagery/papafrancisco1.png";
 import MIKEPENCE from "./imagery/MikePenceglobos.png";
 import LUCASVILLA from "./imagery/LucasVilla.png";
+import MARKWAHLBERG from "./imagery/Mark Wahlberg.png";
 
 export const products = [
+  {
+    _id: uuid(),
+    name:  'El actor Mark Wahlberg dijo que  “las élites pedófilas no van a tener donde esconderse”  ',
+
+date: new Date("2023-07-25").toISOString(),
+
+ tags: ["Mark Wahlberg", "Hollywood", "pedófilas", "élites", "sound of freedom" ],
+
+status: "FALSO",
+
+category: 'Estados Unidos',
+
+afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Hollywood “no van a tener dónde esconderse”  ',
+
+    analisis: 'Publicaciones en redes sociales <em><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=6FB1McPCfDc" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Video</a></em>  afirman que el actor Mark Wahlberg hace declaraciones sobre el abuso sexual del poder de la élite en la industria del cine de los Estados Unidos. <br/> Estas falsas afirmaciones, surgen después del reciente lanzamiento de la película <em><a target="_blank" rel="noreferrer" href="https://www.bbc.com/mundo/articles/c3gzelvnpn9o" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>”Sound of Freedom”</a></em> (Basada en una historia real), que trata sobre el tráfico de menores y está protagonizada por Jim Caviezel, Mira Sorvino y Bill Camp, y en la que supuestamente, Mark Wahlberg, tras el éxito del film, hace aseveraciones sobre la pedofilia en Hollywood.',
+    veredicto: 'Estas publicaciones son FALSAS, ya que no existe evidencia de que Mark Wahlberg haya hecho tales declaraciones. Además, un representante del actor desmintió esa historia como "completamente falsa".',
+    image: MARKWAHLBERG,
+    description:
+      'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  },
    {
     _id: uuid(),
     name: "Lucas Villa Vásquez fue asesinado por vínculos con el microtráfico",
