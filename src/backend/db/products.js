@@ -7,8 +7,43 @@ import PAPAFRANCISCO from "./imagery/papafrancisco1.png";
 import MIKEPENCE from "./imagery/MikePenceglobos.png";
 import LUCASVILLA from "./imagery/LucasVilla.png";
 import MARKWAHLBERG from "./imagery/Mark Wahlberg.png";
-
+import CABALVALENCIA from "./imagery/Cabal Valencia.png";
 export const products = [
+  {
+    _id: uuid(),
+    name: 'Las senadoras María Fernanda Cabal Molina y Paloma Valencia Laserna afirman: "Demandaremos a Vicky Dávila por calumniar a Oscar Iván Zuluaga..." ',
+    date: new Date("2023-07-10").toISOString(),
+    tags: ["Cabal", "Paloma", "Vicky Dávila", "Demanda", "Zuluaga", "Congresistas", "Senadoras", "Periodista", "Centro Democrático"],
+    status: "FALSO",
+    category: 'América Latina',
+    afirmacion: 'Las senadoras del Centro Democrático, María Fernanda Cabal Molina y Paloma Valencia Laserna, afirman: "Demandaremos a Vicky Dávila por calumniar a Oscar Iván Zuluaga. Si es necesario, expondremos a su familia Gnecco ante las autoridades de Estados Unidos. Esto no quedará así." - María Fernanda Cabal - Paloma Valencia, Bogotá 1° de julio de 2023',
+    analisis: 'Circula una publicación en <em><a target="_blank" rel="noreferrer" href="https://twitter.com/CarlArthurKing/status/1675528241363165184" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Twitter</a></em>  con más de 476.4K Views, afirmando que las senadoras María Fernanda Cabal Molina y Paloma Valencia Laserna podrían estar iniciando un proceso jurídico contra la periodista de la Revista Semana, Vicky Dávila, por calumnias contra el exsenador Óscar Iván Zuluaga. <br/> Esto surge, después de que la Directora de la Revista Semana, Vicky Dávila, diera a conocer  <em><a target="_blank" rel="noreferrer" href="https://www.semana.com/politica/articulo/urgente-estos-son-los-audios-en-los-que-se-escucha-a-oscar-ivan-zuluaga-confesar-que-sabia-del-ingreso-de-dineros-de-odebrecht-a-su-campana-en-2014-los-detalles-son-escandalosos/202321/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>grabaciones</a></em> donde el exsenador Óscar Iván Zuluaga admite su conocimiento de los aportes económicos de Odebrecht a su campaña presidencial y revela su estrategia para burlar a las autoridades.<br/> A traves de su cuenta de twitter, <em><a target="_blank" rel="noreferrer" href="https://twitter.com/MariaFdaCabal/status/1675576394711986176" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> la senadora María Fernanda Cabal Molina</a></em>,  niega dicha publicación y la califica como una noticia falsa, mientras que, <em><a target="_blank" rel="noreferrer" href="https://twitter.com/PalomaValenciaL/status/1676202433310072833" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> la senadora Paloma Valencia Laserna</a></em>, enfatiza la importancia de responsabilizar a las personas por sus acciones y manifiesta una fuerte dedicación a este principio sin dejar lugar a excusas o argumentos para infringir la ley.',
+    veredicto: "Esta información es FALSA, ya que no existe evidencia de la supuesta declaración de las senadoras.",
+    image: CABALVALENCIA,
+    description:
+      'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  },
   {
     _id: uuid(),
     name:  'El actor Mark Wahlberg dijo que  “las élites pedófilas no van a tener donde esconderse”  ',
