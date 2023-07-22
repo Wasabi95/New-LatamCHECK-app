@@ -77,22 +77,22 @@ function Footer() {
           
           <ul className="social-links center">
             <li>
-              <Link to="/" target="_blank">
+              <Link to="https://www.facebook.com/AndyCarvajal100fx" target="_blank">
                 <i className="fab fa-facebook"></i>
               </Link>
             </li>
             <li>
-              <Link to="/" target="_blank">
+              <Link to="https://github.com/Wasabi95" target="_blank">
                 <i className="fab fa-github"></i>
               </Link>
             </li>
             <li>
-              <Link to="/" target="_blank">
+              <Link to="https://twitter.com/AndreyCarvaja17" target="_blank">
                 <i className="fab fa-twitter"></i>
               </Link>
             </li>
             <li>
-              <Link to="/" target="_blank">
+              <Link to="https://www.linkedin.com/in/andy-sanclemente-58b134283/" target="_blank">
                 <i className="fab fa-linkedin"></i>
               </Link>
             </li>

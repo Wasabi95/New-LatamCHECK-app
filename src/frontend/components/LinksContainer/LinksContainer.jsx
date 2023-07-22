@@ -23,31 +23,33 @@ const LinksContainer = () => {
       <NavLink className={styles.exploreLink} to='/products'>
         Explore
       </NavLink>
-      <NavLink className={navStyle} to='/wishlist'>
-        <div className={styles.socialMediaIcon}>
-          <FaTwitter />
-          <ItemCount count={wishlistFromContext.length} />
-        </div>
-      </NavLink>
-      <NavLink className={navStyle} to='/wishlist'>
-        <div className={styles.socialMediaIcon}>
-          <FaLinkedin />
-          <ItemCount count={wishlistFromContext.length} />
-        </div>
-      </NavLink>
+      <NavLink className={navStyle} to='https://twitter.com/AndreyCarvaja17' target="_blank">
+          <div className={styles.socialMediaIcon}>
+            <FaTwitter />
+            <ItemCount count={wishlistFromContext.length} />
+          </div>
+        </NavLink>
 
-      <NavLink className={navStyle} to='/cart'>
-        <div className={styles.socialMediaIcon}>
-          <FaFacebook />
-          <ItemCount count={cartFromContext.length} />
-        </div>
-      </NavLink>
+        <NavLink className={navStyle} to='https://www.linkedin.com/in/andy-sanclemente-58b134283/' target="_blank">
+          <div className={styles.socialMediaIcon}>
+            <FaLinkedin />
+            <ItemCount count={wishlistFromContext.length} />
+          </div>
+        </NavLink>
 
-      <NavLink className={navStyle} to='/social-media'>
-        <div className={styles.socialMediaIcon}>
-          <FaInstagram />
-        </div>
-      </NavLink>
+        <NavLink className={navStyle} to='https://www.facebook.com/AndyCarvajal100fx' target="_blank">
+          <div className={styles.socialMediaIcon}>
+            <FaFacebook />
+            <ItemCount count={cartFromContext.length} />
+          </div>
+        </NavLink>
+
+        <NavLink className={navStyle} to='https://www.instagram.com/carvajal.ups/' target="_blank">
+          <div className={styles.socialMediaIcon}>
+            <FaInstagram />
+          </div>
+        </NavLink>
+
     </div>
     
   );

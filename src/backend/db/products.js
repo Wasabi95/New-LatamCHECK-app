@@ -8,6 +8,7 @@ import MIKEPENCE from "./imagery/MikePenceglobos.png";
 import LUCASVILLA from "./imagery/LucasVilla.png";
 import MARKWAHLBERG from "./imagery/Mark Wahlberg.png";
 import CABALVALENCIA from "./imagery/Cabal Valencia.png";
+
 export const products = [
   {
     _id: uuid(),
@@ -425,7 +426,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
       "sb-668",
     ],
     status: "FALSO",
-     category: 'América Latina',
+    category: "Covid-19",
     afirmacion: "Hello People",
     analisis:
       'For this model, triki is 39.62  <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={tiktokLinkStyle}>TikTok</a>, Thin. Graphics Card is Integrated',
@@ -442,7 +443,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
     company: "redmi",
     description:
       "For this model, screen size is 40 Inches. Product Dimensions\tis (8.7D x 89.2W x 55.9H) cm. Operating System is Windows 11. Mounting Hardware includes\t1 LED TV, 2 Table Stand Base, 1 User Manual, 1 Remote Control, 4 screws. Resolution is 1080p with the refresh rate is 60Hz.",
-    category: "Covid-19",
+    
     isShippingAvailable: false,
     stock: 4,
     reviewCount: 35573,
@@ -463,7 +464,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
       "sb-668",
     ],
     status: "PARCIAL",
-     category: 'América Latina',
+    category: "Medio Ambiente",
     price: 1299,
     originalPrice: 1599,
     image:
@@ -485,7 +486,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
     company: "redmi",
     description:
       'This is a "In Ear" product and wireless and equipped with 9.2 mm dynamic drivers. Features include Dual-Mic Noise Cancellation, Dual Pairing Multi-Point Connection with Flexi Arc and Skin-friendly Design. This product is Atamaram Bhide\'s 🧡 and is in under common man budget.',
-    category: "Medio Ambiente",
+    
     isShippingAvailable: true,
     stock: 15,
     reviewCount: 8238,
@@ -506,7 +507,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
       "sb-668",
     ],
     status: "FALSO",
-     category: 'América Latina',
+    category: "HOAX",
     price: 31990,
     originalPrice: 51999,
     image:
@@ -528,7 +529,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
     company: "redmi",
     description:
       "For this model, screen size is 39.62 cm and hard disk size is 256 GB. CPU Model\tCore is i3. RAM Memory Installed Size is 8 GB. Operating System is Windows 10 Home. Special Feature includes Anti Glare Screen, Light Weight, Thin. Graphics Card is Integrated",
-    category: "HOAX",
+    
     isShippingAvailable: true,
     stock: 25,
     reviewCount: 418,
@@ -549,7 +550,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
       "sb-668",
     ],
     status: "VERDADERO",
-     category: 'América Latina',
+    category: "Estados Unidos",
     price: 54499,
     originalPrice: 74999,
     image:
@@ -567,7 +568,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
     company: "redmi",
     description:
       "For this model, screen size is 14 Inches and hard disk size is 512 GB. CPU Model Core is i5. RAM Memory Installed Size is 16 GB. Operating System is Windows 11. Special Feature includes Fingerprint Reader, Backlit Keyboard. Graphics Card is Integrated",
-    category: "Estados Unidos",
+    
     isShippingAvailable: false,
     stock: 10,
     reviewCount: 1805,
@@ -588,7 +589,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
       "sb-668",
     ],
     status: "VERDADERO",
-     category: 'América Latina',
+    category: "Covid-19",
     price: 13499,
     originalPrice: 24999,
     image:
@@ -614,7 +615,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
     company: "redmi",
     description:
       "For this model, screen size is 32 Inches. Product Dimensions\tis (19D x 71.5W x 47H) cm. Operating System is Windows 11. Mounting Hardware includes\t1 LED TV, 2 Table Stand Base, 1 User Manual, 1 Remote Control, 4 screws, 2 x AAA Batteries. Resolution is 720p with the refresh rate is 60Hz. Tapu streams NETFLIX using this device 🧡",
-    category: "Covid-19",
+    
     isShippingAvailable: true,
     stock: 27,
     reviewCount: 35573,
@@ -635,7 +636,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
       "sb-668",
     ],
     status: "FALSO",
-     category: 'América Latina',
+    category: "Resto del Mundo",
     price: 21399,
     originalPrice: 29999,
     image:
@@ -649,7 +650,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
     company: "redmi",
     description:
       "For this model, screen size is 40 Inches. Product Dimensions\tis (8.7D x 89.2W x 55.9H) cm. Operating System is Windows 11. Mounting Hardware includes\t1 LED TV, 2 Table Stand Base, 1 User Manual, 1 Remote Control, 4 screws. Resolution is 1080p with the refresh rate is 60Hz.",
-    category: "Resto del Mundo",
+    
     isShippingAvailable: false,
     stock: 4,
     reviewCount: 35573,
