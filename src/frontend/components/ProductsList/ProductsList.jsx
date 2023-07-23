@@ -56,7 +56,7 @@ const ProductsList = ({
     // eslint-disable-next-line
   }, [filtersObjFromContext]);
 
-  // If filtering, show skeleton cards
+ 
   if (isFilterLoading) {
     const skeletons = new Array(TOTAL_SKELETONS_LENGTH).fill(null);
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import styles from './PasswordRow.module.css';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
@@ -32,7 +32,7 @@ const PasswordRow = ({
         required={true}
         disabled={disabled}
       />
-      {/* toggling this does not submit the form (that wraps this PasswordRow Component), bcoz of type='button' */}
+     
       <button type='button' onClick={handleToggle}>
         {showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
       </button>
@@ -41,3 +41,4 @@ const PasswordRow = ({
 };
 
 export default PasswordRow;
+ */

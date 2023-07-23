@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+/* import { Link } from 'react-router-dom';
 import Title from '../Title/Title';
 
 import styles from './EmptyList.module.css';
@@ -20,3 +20,4 @@ const EmptyList = ({ listName }) => {
 };
 
 export default EmptyList;
+ */

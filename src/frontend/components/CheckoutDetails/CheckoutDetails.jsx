@@ -1,4 +1,4 @@
-import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
+/* import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
 import Price from '../Price';
 import styles from './CheckoutDetails.module.css';
 import { useState } from 'react';
@@ -21,7 +21,7 @@ const CheckoutDetails = ({
     },
     addressList: addressListFromContext,
     clearCartDispatch,
-    // addOrderDispatch,
+    
   } = useAllProductsContext();
 
   const {
@@ -190,3 +190,4 @@ const CheckoutDetails = ({
 };
 
 export default CheckoutDetails;
+ */

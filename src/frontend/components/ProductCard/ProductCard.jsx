@@ -1,3 +1,6 @@
+import React from 'react';
+import styles from './ProductCard.module.css';
+import { Link } from 'react-router-dom';
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -5,44 +8,9 @@ import {
   EmailShareButton,
 } from 'react-share';
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-import styles from './ProductCard.module.css';
-import { Link, useLocation } from 'react-router-dom';
-import { 
-  isPresent,
-} from '../../utils/utils';
-import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
-import { useAuthContext } from '../../contexts/AuthContextProvider';
-import { useState } from 'react';
 
 const ProductCard = ({ product }) => {
-  const location = useLocation();
-  const isCardInWishlistPage = location.pathname === '/wishlist';
-
-  useAuthContext();
-  const {
-    cart: cartFromContext,   
-   
-  } = useAllProductsContext();
-
-  const { colors, stock } = product;
-  const inStock = stock > 0;
-
-  const [activeColorObj] = useState(colors[0]);
-
-  // eslint-disable-next-line no-empty-pattern
-  const [] = useState(false);
-
-  const isProductInCart = isPresent(
-    isCardInWishlistPage
-      ? product._id
-      : `${product._id}${activeColorObj.color}`,
-    cartFromContext
-  );
-
-
-  if (isProductInCart) {
-  }
-
+  
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -68,23 +36,26 @@ const ProductCard = ({ product }) => {
       return '';
     }
   };
-        
+
+  const isProductInStock = product.stock > 0;
 
   return (
     <article
       className={
-        inStock
+        isProductInStock
           ? styles.productStyle
           : `${styles.productStyle} ${styles.disabledProduct}`
       }
     >
       <div className={styles.imgContainer}>
-  <Link to={`/products/${product._id}`}>
-    <img className={styles.productImage} src={product.image} alt={product.name} />
-  </Link>
-</div>
-
-     
+        <Link to={`/products/${product._id}`}>
+          <img
+            className={styles.productImage}
+            src={product.image}
+            alt={product.name}
+          />
+        </Link>
+      </div>
 
       <div className={styles.cardInfo}>
         <header className={styles.cardHeader}>
@@ -103,26 +74,24 @@ const ProductCard = ({ product }) => {
             </EmailShareButton>
           </div>
           <span className={styles.rating}>{product.category}</span>
-     
+
           <p>{product.name}</p>
-          <p>{product.author}</p>         
-          
+          <p>{product.author}</p>
         </header>
         <p className="product-date">{formatDate(product.date)}</p>
 
-        <span className={`product-status ${getStatusColor(product.status)}`}>
+        <span
+          className={`product-status ${getStatusColor(product.status)}`}
+        >
           {product.status}
-        </span>      
+        </span>
       </div>
-      
     </article>
-    
-    
-    
   );
 };
 
 export default ProductCard;
+
 
 
 

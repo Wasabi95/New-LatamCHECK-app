@@ -1,4 +1,4 @@
-import { ALL_STATES, ToastType } from '../../constants/constants';
+/* import { ALL_STATES, ToastType } from '../../constants/constants';
 
 import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
 
@@ -20,7 +20,7 @@ const AddressForm = ({ isAdding, isEditingAndData = null, closeForm }) => {
 
   const isEditing = !!isEditingAndData;
 
-  // alternate is optional
+
   const defaultState = {
     username: '',
     mobile: '',
@@ -86,7 +86,7 @@ const AddressForm = ({ isAdding, isEditingAndData = null, closeForm }) => {
     setInputs(giveRandomData());
   };
 
-  //  stop propagation as this form will be inside modal, on clicking form, the modal should not close.
+  
   return (
     <form
       onClick={(e) => e.stopPropagation()}
@@ -202,4 +202,4 @@ const AddressForm = ({ isAdding, isEditingAndData = null, closeForm }) => {
   );
 };
 
-export default AddressForm;
+export default AddressForm; */

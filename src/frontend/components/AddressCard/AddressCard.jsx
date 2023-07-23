@@ -1,4 +1,4 @@
-import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
+/* import { useAllProductsContext } from '../../contexts/ProductsContextProvider';
 import styles from './AddressCard.module.css';
 
 const AddressCard = ({
@@ -56,3 +56,4 @@ const AddressCard = ({
 };
 
 export default AddressCard;
+ */

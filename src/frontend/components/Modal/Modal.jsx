@@ -1,4 +1,4 @@
-import { createPortal } from 'react-dom';
+/* import { createPortal } from 'react-dom';
 import styles from './Modal.module.css';
 
 const Modal = ({ children, closeModal }) => {
@@ -11,3 +11,4 @@ const Modal = ({ children, closeModal }) => {
 };
 
 export default Modal;
+ */

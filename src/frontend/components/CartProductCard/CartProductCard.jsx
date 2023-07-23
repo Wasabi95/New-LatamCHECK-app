@@ -1,4 +1,4 @@
-import {
+/* import {
   calculateDiscountPercent,
   isPresent,
   toastHandler,
@@ -64,14 +64,14 @@ const CartProductCard = ({ singleCartItem }) => {
   return (
     <article className={styles.cartItem}>
       <main className={styles.cartItemMain}>
-        {/* child 1 */}
+      
         <div className={styles.imgContainer}>
           <Link to={`/products/${_id}`}>
             <img src={image} alt={name} />
           </Link>
         </div>
 
-        {/* child 2 */}
+        
         <div className={styles.itemInfo}>
           <h3>{name}</h3>
           <div className={styles.cardMain}>
@@ -142,3 +142,4 @@ const CartProductCard = ({ singleCartItem }) => {
 };
 
 export default CartProductCard;
+ */

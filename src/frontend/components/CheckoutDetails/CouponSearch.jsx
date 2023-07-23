@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+/* import React, { useEffect, useState } from 'react';
 import {
   COUPONS,
   ToastType,
@@ -33,7 +33,7 @@ const CouponSearch = ({ activeCoupon, updateActiveCoupon }) => {
   };
 
   const handleCouponClick = (couponClicked) => {
-    //  for mobile, there is no tooltip and buttons not disabled for the following condition
+   
     if (
       isMobile &&
       totalAmountFromContext < couponClicked.minCartPriceRequired
@@ -49,7 +49,7 @@ const CouponSearch = ({ activeCoupon, updateActiveCoupon }) => {
 
     setCouponSearchInput(couponClicked.couponCode);
 
-    // if activeCoupon and the couponClicked in suggestion is same do nothing
+    
     if (activeCoupon?.couponCode === couponClicked.couponCode) {
       return;
     }
@@ -72,7 +72,7 @@ const CouponSearch = ({ activeCoupon, updateActiveCoupon }) => {
         couponCode.toUpperCase() === couponSearchInput.toUpperCase()
     );
 
-    //  user input based coupon not found, so all coupons suggestion visible
+    
     if (!couponFound) {
       toastHandler(
         ToastType.Error,
@@ -92,12 +92,12 @@ const CouponSearch = ({ activeCoupon, updateActiveCoupon }) => {
       return;
     }
 
-    // if couponSearchInput and activeCouponCode is same, do nothing
+    
     if (activeCoupon?.id === couponFound.id) {
       return;
     }
 
-    // else update and show toast
+    
     updateActiveCoupon(couponFound);
   };
 
@@ -160,3 +160,4 @@ const CouponSearch = ({ activeCoupon, updateActiveCoupon }) => {
 };
 
 export default CouponSearch;
+ */

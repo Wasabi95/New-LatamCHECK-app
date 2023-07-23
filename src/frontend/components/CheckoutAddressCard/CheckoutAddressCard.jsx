@@ -1,4 +1,4 @@
-import styles from './CheckoutAddressCard.module.css';
+/* import styles from './CheckoutAddressCard.module.css';
 
 const CheckoutAddressCard = ({
   singleAddress,
@@ -42,3 +42,4 @@ const CheckoutAddressCard = ({
 };
 
 export default CheckoutAddressCard;
+ */
