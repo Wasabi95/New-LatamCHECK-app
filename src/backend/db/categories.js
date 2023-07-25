@@ -3,16 +3,12 @@
  * You can add category of your wish with different attributes
  * */
 import { v4 as uuid } from "uuid";
-<<<<<<< HEAD
-export const categories = [
-  {
-   _id: uuid(),
-=======
+
 
 export const categories = [
   {
     _id: uuid(),
->>>>>>> 3cd89698aa193ff135d73cfc1f0675f0c044e014
+
     categoryName: 'Estados Unidos',
     description: '',
     img: "https://images.pexels.com/photos/1202723/pexels-photo-1202723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
