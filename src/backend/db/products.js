@@ -8,19 +8,20 @@ import MIKEPENCE from "./imagery/MikePenceglobos.png";
 import LUCASVILLA from "./imagery/LucasVilla.png";
 import MARKWAHLBERG from "./imagery/Mark Wahlberg.png";
 import CABALVALENCIA from "./imagery/Cabal Valencia.png";
+import BILLGATES from "./imagery/BillGates.png";
+import DEBRIS from "./imagery/DEBRIS.png";
 
 export const products = [
   {
     _id: uuid(),
-    name: 'TESTING TESTING TESTING TESTING TESTING." ',
-    date: new Date("2023-12-31").toISOString(),
-    tags: ["TESTING", "TESTING", "TESTING", "TESTING", "TESTING", "TESTING", "TESTING", "TESTING"],
+    name: 'Restos recuperados del submarino "Titán" tras su implosión.',
+    date: new Date("2023-06-28").toISOString(),
+    tags: ["titán", "implosión", "titanic", "escombros", "submarino"],
     status: "FALSO",
-    category: 'América Latina',
-    afirmacion: 'Las senadoras del Centro Democrático, María Fernanda Cabal Molina y Paloma Valencia Laserna, afirman: "Demandaremos a Vicky Dávila por calumniar a Oscar Iván Zuluaga. Si es necesario, expondremos a su familia Gnecco ante las autoridades de Estados Unidos. Esto no quedará así." - María Fernanda Cabal - Paloma Valencia, Bogotá 1° de julio de 2023',
-    analisis: 'Circula una publicación en <em><a target="_blank" rel="noreferrer" href="https://twitter.com/CarlArthurKing/status/1675528241363165184" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Twitter</a></em>  con más de 476.4K Views, afirmando que las senadoras María Fernanda Cabal Molina y Paloma Valencia Laserna podrían estar iniciando un proceso jurídico contra la periodista de la Revista Semana, Vicky Dávila, por calumnias contra el exsenador Óscar Iván Zuluaga. <br/> Esto surge, después de que la Directora de la Revista Semana, Vicky Dávila, diera a conocer  <em><a target="_blank" rel="noreferrer" href="https://www.semana.com/politica/articulo/urgente-estos-son-los-audios-en-los-que-se-escucha-a-oscar-ivan-zuluaga-confesar-que-sabia-del-ingreso-de-dineros-de-odebrecht-a-su-campana-en-2014-los-detalles-son-escandalosos/202321/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>grabaciones</a></em> donde el exsenador Óscar Iván Zuluaga admite su conocimiento de los aportes económicos de Odebrecht a su campaña presidencial y revela su estrategia para burlar a las autoridades.<br/> A traves de su cuenta de twitter, <em><a target="_blank" rel="noreferrer" href="https://twitter.com/MariaFdaCabal/status/1675576394711986176" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> la senadora María Fernanda Cabal Molina</a></em>,  niega dicha publicación y la califica como una noticia falsa, mientras que, <em><a target="_blank" rel="noreferrer" href="https://twitter.com/PalomaValenciaL/status/1676202433310072833" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> la senadora Paloma Valencia Laserna</a></em>, enfatiza la importancia de responsabilizar a las personas por sus acciones y manifiesta una fuerte dedicación a este principio sin dejar lugar a excusas o argumentos para infringir la ley.',
-    veredicto: "Esta información es FALSA, ya que no existe evidencia de la supuesta declaración de las senadoras.",
-    image: CABALVALENCIA,
+    category: 'Resto del Mundo',
+    analisis: 'Circulan imágenes en las redes sociales <em><a target="_blank" rel="noreferrer" href="https://twitter.com/LuisCoronel83/status/1671981695526903823" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Twitter</a></em>, en las que se ven en el fondo del mar restos de objetos personales como zapatos, ropa y utensilios, pertenecientes supuestamente al sumergible ‘Titan”, luego de su implosión el 18 de junio de 2023. Tras el desastre ocurrido el pasado 18 de junio de 2023, donde murieron cinco personas dentro del sumergible <em><a target="_blank" rel="noreferrer" href="https://cnnespanol.cnn.com/2023/06/23/submarino-titan-pasajeros-murieron-titanic-como-sigue-ahora-trax/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>“Titán”</a></em>, el cual tenía como propósito observar los restos del Titanic, se han difundido imágenes falsas sobre lo que serían “escombros” del submarino cerca de la zona en la que está el Titanic. Las imágenes <em><a target="_blank" rel="noreferrer" href="https://www.latimes.com/espanol/internacional/articulo/2023-06-19/buscan-sumergible-con-pasajeros-que-desaparecio-mientras-iban-a-ver-restos-del-titanic" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>1</a></em> y <em><a target="_blank" rel="noreferrer" href="https://www.latimes.com/espanol/internacional/articulo/2020-10-18/en-duda-planes-de-recuperar-transmisor-de-radio-del-titanic" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>2</a></em> son fotos de restos del Titanic, que se hundió en el océano Atlántico en 1912. La imagen <em><a target="_blank" rel="noreferrer" href="https://twitter.com/prince_of_fakes/status/1671932419300278272" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>3</a></em> fue generada con inteligencia artificial por la cuenta de Twitter "Prince of Deep Fakes (Parody)", que publica contenidos de IA. En cuanto a la imagen <em><a target="_blank" rel="noreferrer" href="https://www.nationalgeographic.com.es/ciencia/robot-llamado-victor-podria-ser-salvacion-titan_20213" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>4</a></em>, es el robot francés Victor 6000 utilizado en diversas aplicaciones, como exploración y mapeo del fondo marino, inspección de estructuras submarinas, recuperación de objetos, investigación científica, entre otras, que fue enviado para ayudar a buscar el submarino Titan.',
+    veredicto: 'Esta información es FALSA. Las imágenes 1 y 2 corresponden a los restos del Titanic y no al submarino "Titán". La imagen 4 pertenece a Victor 6000, un robot de rescate francés, y la imagen 3 es una imagen AI.',
+    image: DEBRIS,
     description:
       'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
     colors: [
@@ -37,17 +38,55 @@ export const products = [
         colorQuantity: 9,
       },
     ],
-     price: 31990,
+    price: 31990,
     originalPrice: 51999,
     company: "redmi",
     isShippingAvailable: true,
     stock: 25,
-    reviewCount: 418, 
-    stars: 3.7, 
+    reviewCount: 418,
+    stars: 3.7,
+  },
+
+    
+    
+ {
+    _id: uuid(),
+    name: "Bill Gates predice que la próxima pandemia tendrá lugar en 2025 y será producida por el nuevo virus SEERS",
+    date: new Date("2023-05-20").toISOString(),
+    tags: ["Bill Gates", "pandemia", "virus", "SEERS", "2025", "nuevo virus"],
+    status: "FALSO",
+    category: "Salud",
+    afirmacion: "Bill Gates pronostica una futura pandemia en 2025 causada por el virus SEERS",
+    analisis: 'Se han difundido en plataformas digitales como  <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/100028403306806/posts/922450148711753" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Facebook</a></em> y  <em><a target="_blank" rel="noreferrer" href="https://twitter.com/iamOmarPE/status/1654514004562255874" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Twitter</a></em> mensajes que aseguran que Bill Gates, uno de los cofundadores de Microsoft, habría hecho una "predicción" acerca de una futura pandemia que ocurriría en 2025 y que  está  sería causada por un virus llamado "SEERS". El 23 de octubre de 2022, el Centro Johns Hopkins para la Seguridad de la Salud, en colaboración con la OMS y la Fundación Bill y Melinda Gates, organizaron un ejercicio de simulación de pandemia llamado <em><a target="_blank" rel="noreferrer" href="https://catastrophiccontagion.centerforhealthsecurity.org/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>“Contagio catastrófico”</a></em>, un ejercicio de desafío global para brindar capacitación y educación a funcionarios gubernamentales y de salud pública sobre cómo responder efectivamente a una pandemia mundial. Es una simulación teórica, no un evento real, que explora desafíos y procesos de toma de decisiones en respuesta a una crisis. Durante el ejercicio, los participantes, incluido Bill Gates, se enfrentan a situaciones desafiantes que requieren una toma de decisiones rápida y crítica. Se resalta la importancia de la cooperación internacional, combatir la desinformación y promover la comunicación precisa en una pandemia, así como garantizar una distribución equitativa de recursos para tratamientos y vacunas. Las <em><a target="_blank" rel="noreferrer" href="https://catastrophiccontagion.centerforhealthsecurity.org/lessons-from-the-exercise-0" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>lecciones del ejercicio</a></em> buscan mejorar la preparación y respuesta ante pandemias a nivel mundial para salvar vidas y proteger las economías frente a futuras crisis de salud.',
+    veredicto: "Esta información es FALSA. No hay evidencia que sugiera que Bill Gates haya hecho predicciones específicas sobre una pandemia en 2025 o en cualquier otra fecha futura. El ejercicio 'Contagio catastrófico' es una simulación teórica de un escenario ficticio de una pandemia mundial. Es un ejercicio educativo y de capacitación para funcionarios gubernamentales y de salud pública para prepararse mejor para posibles crisis de salud futuras.",
+    image: BILLGATES,
+    description:
+      'wasabito pito is 39.62 <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@wasabithebengalcat?lang=en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>TikTok</a></em>, Thin. Graphics Card is Integrated',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
   },
   {
     _id: uuid(),
-    name: 'Las senadoras María Fernanda Cabal Molina y Paloma Valencia Laserna afirman: "Demandaremos a Vicky Dávila por calumniar a Oscar Iván Zuluaga..." ',
+    name: 'María Fernanda Cabal y Paloma Valencia afirman que demandaran a Vicky Dávila por calumnias',
     date: new Date("2023-07-10").toISOString(),
     tags: ["Cabal", "Paloma", "Vicky Dávila", "Demanda", "Zuluaga", "Congresistas", "Senadoras", "Periodista", "Centro Democrático"],
     status: "FALSO",
@@ -82,7 +121,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    name:  'El actor Mark Wahlberg dijo que  “las élites pedófilas no van a tener donde esconderse”  ',
+    name:  'El actor Mark Wahlberg dijo que “las élites pedófilas no van a tener donde esconderse”  ',
 
 date: new Date("2023-07-25").toISOString(),
 
@@ -123,7 +162,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
   },
    {
     _id: uuid(),
-    name: "Lucas Villa Vásquez fue asesinado por vínculos con el microtráfico",
+    name: "Lucas Villa Vásquez fue asesinado durante el paro del 2021 por vínculos con el microtráfico",
     date: new Date("2023-07-25").toISOString(),
     tags: ["Lucas Villa", "asesinado", "protestas", "microtráfico", "Paro nacional", "Colombia", "estallido social", "muerte"],
     status: "FALSO",
@@ -195,7 +234,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
   },
   {
     _id: uuid(),
-    name: "El Papa Francisco usando una chaqueta oversize de color blanco y una cruz grande al cuello",
+    name: "El Papa Francisco usando una chaqueta oversize de color blanco",
     date: new Date("2023-04-5").toISOString(),
     tags: ["Papa", "Moda", "Francisco", "Chaqueta", "Chaqueta Blanca", "abrigo", "Jacket","cruz"],
     status: "FALSO",
@@ -233,7 +272,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
   },
   {
     _id: uuid(),
-    name: "El gobernador de Florida, EE.UU., Ron DeSantis, firmó una ley que restringe la exhibición de la bandera de Puerto Rico en público",
+    name: "El gobernador de Florida, Ron DeSantis,prohibe la bandera de Puerto Rico en público",
     date: new Date("2023-06-15").toISOString(),
     tags: [
       "DeSantis",
@@ -281,7 +320,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
   },
   {
     _id: uuid(),
-    name: "Putin ha sido derrotado y la OTAN admite a Ucrania como miembro",
+    name: "Putin ha sido derrotado y la OTAN admite a Ucrania como miembro de la OTAN",
     date: new Date("2023-07-15").toISOString(),
     tags: ["Putin", "OTAN", "NATO ", "Ucrania", "Vladimir", "", "", ""],
     status: "FALSO",
@@ -361,7 +400,7 @@ afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Holly
 
   {
     _id: uuid(),
-    name: "La neblina reciente en la ciudad de Nueva York fue causada por  Bill Gates",
+    name: "La reciente neblina que cubrio la ciudad de Nueva York fue causada por Bill Gates ",
     date: new Date("2023-06-25").toISOString(),
     tags: [
       "Bill",
