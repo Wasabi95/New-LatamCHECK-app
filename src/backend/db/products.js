@@ -11,8 +11,45 @@ import CABALVALENCIA from "./imagery/Cabal Valencia.png";
 import BILLGATES from "./imagery/BillGates.png";
 import DEBRIS from "./imagery/Debris (2).png";
 import ONU from "./imagery/onu.png";
+import PINK from "./imagery/Pink.png";
+
 
 export const products = [
+  {
+    _id: uuid(),
+    name: 'Barack Obama y Joe Biden  se vistieron de rosado por la película de Barbie.',
+    date: new Date("2023-07-30").toISOString(),
+    tags: ["Barbie", "Obama", "Biden", "pink", "rosado"],
+    status: "FALSO",
+    category: 'Estados Unidos',
+    afirmacion: 'Circulan imágenes que muestran al presidente estadounidense Joe Biden y al expresidente Barack Obama vestidos con trajes rosados.',
+    analisis:'Publicaciones en redes sociales  <em><a target="_blank" rel="noreferrer" href="https://twitter.com/joncoopertweets/status/1683304053881675777" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Twitter</a></em> han compartido  imágenes del presidente estadounidense, Joe Biden, y el expresidente Barack Obama vestidos con trajes rosas, supuestamente para celebrar el lanzamiento de la película "Barbie". <br/> Al usar la técnica de google imagen reversa, se evidenció que estas fotografías no son auténticas. En realidad, las imágenes no fueron tomadas de ningún evento real o sesión de fotos en la que Barack Obama y Joe Biden se vistieron de rosa. En cambio, se generaron utilizando inteligencia artificial (IA). Esto significa que los usuarios de las redes sociales, probablemente como una broma o para crear un meme viral, usó tecnología de inteligencia artificial para manipular fotos existentes de Barack Obama y Joe Biden y vestirlos con atuendos rosados.',
+    veredicto: ' Las imágenes que muestran a Barack Obama y Joe Biden con atuendos rosados no son reales. Fueron fabricados usando inteligencia artificial, probablemente como una publicación en las redes sociales humorística o para llamar la atención. Es crucial ser cauteloso y crítico al consumir información de las redes sociales y siempre verificar la autenticidad de las imágenes o afirmaciones antes de creerlas o compartirlas. La verificación de hechos por expertos juega un papel importante en desacreditar información falsa y promover la precisión en el discurso público.',
+    image: PINK,
+    description:
+      'Publicaciones en redes sociales han compartido imágenes del presidente estadounidense, Joe Biden, y el expresidente Barack Obama vestidos con trajes rosas, supuestamente para celebrar el lanzamiento de la película "Barbie". Al usar la técnica de google imagen reversa, se evidenció que estas fotografías no son auténticas. En realidad, las imágenes no fueron tomadas de ningún evento real o sesión de fotos en la que Barack Obama y Joe Biden se vistieron de rosa. En cambio, se generaron utilizando inteligencia artificial (IA). Esto significa que los usuarios de las redes sociales, probablemente como una broma o para crear un meme viral, usó tecnología de inteligencia artificial para manipular fotos existentes de Barack Obama y Joe Biden y vestirlos con atuendos rosados.',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  }, 
   {
     _id: uuid(),
     name: 'ONU investigará a Uribe, Duque y a Marta Ramírez por supuestos vinculos con el narcotráfico.',
@@ -20,12 +57,12 @@ export const products = [
     tags: ["ONU", "Alvaro Uribe", "investigación", "denuncias", "Marta Ramirez", "corrupción", "Ivan Duque", "narcotrafico"],
     status: "FALSO",
     category: 'América Latina',
-    afirmacion:  'Las Naciones Unidas han anunciado su intención de realizar investigaciones exhaustivas a los expresidentes Álvaro Uribe Vélez e Iván Duque y a la expresidenta Marta Lucía Ramírez, sobre denuncias de participación en narcotráfico y prácticas corruptas.',
+    afirmacion:  'Las Naciones Unidas han anunciado su intención de realizar investigaciones exhaustivas a los expresidentes Álvaro Uribe Vélez e Iván Duque y a la viceexpresidenta Marta Lucía Ramírez, sobre denuncias de participación en narcotráfico y prácticas corruptas.',
     analisis:'De acuerdo con publicaciones en redes sociales <em><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=T3F1ThkJpjw" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Video</a></em>  se ha anunciado que la ONU llevará a cabo investigaciones sobre los expresidentes Álvaro Uribe Vélez e Iván Duque, así como la exvicepresidenta Marta Lucía Ramírez, debido a acusaciones que involucran su participación en actividades relacionadas con el narcotráfico y actos de corrupción. Además, también se investigarán las conexiones de Sarmiento Angulo con el caso Odebrecht, y se llevará a cabo una revisión de la gestión del fiscal Barbosa en relación con sus investigaciones. <br/> Es importante señalar que, respecto a las <em><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=jJA4pH-ljC4" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>declaraciones</a></em> del 12 de julio de 2023 realizadas por el Sr. Leonardo Rodríguez Pérez, representante ante la ONU de la <em><a target="_blank" rel="noreferrer" href="https://www.malocainternationale.com/en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>ONG Maloca Internationale</a></em>,  en la 33ª Reunión y 53° Período Ordinario de Sesiones del Consejo de Derechos Humanos, hasta el momento no se ha encontrado ningún<em><a target="_blank" rel="noreferrer" href="https://www.ohchr.org/es/hr-bodies/hrc/regular-sessions/session53/list-reports" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> reporte </a></em> que indique que el Consejo de Derechos Humanos de las Naciones Unidas tenga planes de ordenar una investigación que involucre a los expresidentes Álvaro Uribe e Iván Duque, ni a la exvicepresidenta Marta Lucía Ramírez. Del mismo modo, no se ha mencionado ninguna acción relacionada con el Sr. Luis Carlos Sarmiento Angulo o el fiscal Francisco  Barbosa.',
     veredicto: 'Estas publicaciones son FALSAS. A pesar de las declaraciones realizadas por el representante de una ONG en la 33ª Reunión y 53° Período Ordinario de Sesiones del Consejo de Derechos Humanos de las Naciones Unidas, no se ha confirmado esta información en informes creíbles o declaraciones oficiales. Además, la Organización de las Naciones Unidas (ONU) no tiene la función de ordenar investigaciones sobre expresidentes o cualquier otra persona.',
     image: ONU,
     description:
-      'De acuerdo con publicaciones en redes sociales Video se ha anunciado que la ONU llevará a cabo investigaciones sobre los expresidentes Álvaro Uribe Vélez e Iván Duque, así como la exvicepresidenta Marta Lucía Ramírez, debido a acusaciones que involucran su participación en actividades relacionadas con el narcotráfico y actos de corrupción. Además, también se investigarán las conexiones de Sarmiento Angulo con el caso Odebrecht, y se llevará a cabo una revisión de la gestión del fiscal Barbosa en relación con sus investigaciones. Es importante señalar que, respecto a las declaraciones del 12 de julio de 2023 realizadas por el Sr. Leonardo Rodríguez Pérez, representante ante la ONU de la ONG Maloca Internationale, en la 33ª Reunión y 53° Período Ordinario de Sesiones del Consejo de Derechos Humanos, hasta el momento no se ha encontrado ningúnreporte que indique que el Consejo de Derechos Humanos de las Naciones Unidas tenga planes de ordenar una investigación que involucre a los expresidentes Álvaro Uribe e Iván Duque, ni a la exvicepresidenta Marta Lucía Ramírez. Del mismo modo, no se ha mencionado ninguna acción relacionada con el Sr. Luis Carlos Sarmiento Angulo o el fiscal Francisco Barbosa.',
+      'De acuerdo con publicaciones en redes sociales se ha anunciado que la ONU llevará a cabo investigaciones sobre los expresidentes Álvaro Uribe Vélez e Iván Duque, así como la exvicepresidenta Marta Lucía Ramírez, debido a acusaciones que involucran su participación en actividades relacionadas con el narcotráfico y actos de corrupción. Además, también se investigarán las conexiones de Sarmiento Angulo con el caso Odebrecht, y se llevará a cabo una revisión de la gestión del fiscal Barbosa en relación con sus investigaciones. Es importante señalar que, respecto a las declaraciones del 12 de julio de 2023 realizadas por el Sr. Leonardo Rodríguez Pérez, representante ante la ONU de la ONG Maloca Internationale, en la 33ª Reunión y 53° Período Ordinario de Sesiones del Consejo de Derechos Humanos, hasta el momento no se ha encontrado ningúnreporte que indique que el Consejo de Derechos Humanos de las Naciones Unidas tenga planes de ordenar una investigación que involucre a los expresidentes Álvaro Uribe e Iván Duque, ni a la exvicepresidenta Marta Lucía Ramírez. Del mismo modo, no se ha mencionado ninguna acción relacionada con el Sr. Luis Carlos Sarmiento Angulo o el fiscal Francisco Barbosa.',
     colors: [
       {
         color: "#0000ff",
@@ -60,7 +97,7 @@ export const products = [
     veredicto: 'Esta información es FALSA, la imágen 1 pertenece a Victor 6000, un robot de rescate francés, las imágenes 2 y 3 corresponden a los restos del Titanic y no a las del sumergible Titán y la imagen 4 es una imagen hecha por IA.',
     image: DEBRIS,
     description:
-      'Circulan imágenes en las redes sociales como Twitter, TikTok en las que se ven en el fondo del mar restos de objetos personales como zapatos, ropa y utensilios, pertenecientes supuestamente al sumergible ‘Titan”, luego de su implosión el 18 de junio de 2023.',
+      'Circulan imágenes en las redes sociales como en las que se ven en el fondo del mar restos de objetos personales como zapatos, ropa y utensilios, pertenecientes supuestamente al sumergible ‘Titan”, luego de su implosión el 18 de junio de 2023.',
     colors: [
       {
         color: "#0000ff",
@@ -95,7 +132,7 @@ export const products = [
     veredicto: "Esta información es FALSA. No hay evidencia que sugiera que Bill Gates haya hecho predicciones específicas sobre una pandemia en 2025 o en cualquier otra fecha futura. El ejercicio 'Contagio catastrófico' es una simulación teórica de un escenario ficticio de una pandemia mundial. Es un ejercicio educativo y de capacitación para funcionarios gubernamentales y de salud pública para prepararse mejor para posibles crisis de salud futuras.",
     image: BILLGATES,
     description:
-      'Se han difundido en plataformas digitales como Facebook y Twitter mensajes que aseguran que Bill Gates, uno de los cofundadores de Microsoft, habría hecho una "predicción" acerca de una futura pandemia que ocurriría en 2025 y que está sería causada por un virus llamado "SEERS". El 23 de octubre de 2022, el Centro Johns Hopkins para la Seguridad de la Salud, en colaboración con la OMS y la Fundación Bill y Melinda Gates, organizaron un ejercicio de simulación de pandemia llamado “Contagio catastrófico”, un ejercicio de desafío global para brindar capacitación y educación a funcionarios gubernamentales y de salud pública sobre cómo responder efectivamente a una pandemia mundial. Es una simulación teórica, no un evento real, que explora desafíos y procesos de toma de decisiones en respuesta a una crisis. Durante el ejercicio, los participantes, incluido Bill Gates, se enfrentan a situaciones desafiantes que requieren una toma de decisiones rápida y crítica.',
+      'Se han difundido en plataformas digitales mensajes que aseguran que Bill Gates, uno de los cofundadores de Microsoft, habría hecho una "predicción" acerca de una futura pandemia que ocurriría en 2025 y que está sería causada por un virus llamado "SEERS". El 23 de octubre de 2022, el Centro Johns Hopkins para la Seguridad de la Salud, en colaboración con la OMS y la Fundación Bill y Melinda Gates, organizaron un ejercicio de simulación de pandemia llamado “Contagio catastrófico”, un ejercicio de desafío global para brindar capacitación y educación a funcionarios gubernamentales y de salud pública sobre cómo responder efectivamente a una pandemia mundial. Es una simulación teórica, no un evento real, que explora desafíos y procesos de toma de decisiones en respuesta a una crisis. Durante el ejercicio, los participantes, incluido Bill Gates, se enfrentan a situaciones desafiantes que requieren una toma de decisiones rápida y crítica.',
     colors: [
       {
         color: "#0000ff",
@@ -165,7 +202,7 @@ export const products = [
     veredicto: 'Estas publicaciones son FALSAS, ya que no existe evidencia de que Mark Wahlberg haya hecho tales declaraciones. Además, un representante del actor desmintió esa historia como "completamente falsa".',
     image: MARKWAHLBERG,
     description:
-      'Publicaciones en redes sociales Video afirman que el actor Mark Wahlberg hace declaraciones sobre el abuso sexual del poder de la élite en la industria del cine de los Estados Unidos. Estas falsas afirmaciones, surgen después del reciente lanzamiento de la película ”Sound of Freedom” (Basada en una historia real), que trata sobre el tráfico de menores y está protagonizada por Jim Caviezel, Mira Sorvino y Bill Camp, y en la que supuestamente, Mark Wahlberg, tras el éxito del film, hace aseveraciones sobre la pedofilia en Hollywood.',
+      'Publicaciones en redes sociales afirman que el actor Mark Wahlberg hace declaraciones sobre el abuso sexual del poder de la élite en la industria del cine de los Estados Unidos. Estas falsas afirmaciones, surgen después del reciente lanzamiento de la película ”Sound of Freedom” (Basada en una historia real), que trata sobre el tráfico de menores y está protagonizada por Jim Caviezel, Mira Sorvino y Bill Camp, y en la que supuestamente, Mark Wahlberg, tras el éxito del film, hace aseveraciones sobre la pedofilia en Hollywood.',
     colors: [
       {
         color: "#0000ff",
@@ -202,7 +239,7 @@ export const products = [
     veredicto: "Esta información es FALSA, ya que, según la información de las autoridades, no hay ninguna relación con actividades ilegales por parte del líder estudiantil Lucas Villa Vásquez.",
     image: LUCASVILLA,
     description:
-      'Una publicación en Twitter afirma falsamente que la causa de la muerte del líder estudiantil Lucas Villa Vásquez, ocurrida el 11 de mayo de 2021 en Pereira durante el Paro Nacional de Colombia, por motivos de la reforma tributaria presentada por el gobierno del entonces presidente Iván Duque, fue debido a problemas con el microtráfico de drogas. Sin embargo, el 13 de Julio de 2023, la Fiscalía de Colombia informó a través de Boletín 49254 que capturaron a Jonatan Stiven Mejía Hurtado, alias Truan, jefe de la organización delincuencial ‘La Cordillera’, quien está posiblemente vinculado con el crimen que resultó en la muerte de Lucas Villa Vásquez y que operan en Dosquebradas, Risaralda. Según la evidencia presentada por la Fiscalía, parece que los líderes principales de “La Cordillera” creían que las acciones de bloqueo de las vías por las marchas del líder estudiantil durante las protestas estaban perjudicando los intereses del grupo ilegal.',
+      'Una publicación afirma falsamente que la causa de la muerte del líder estudiantil Lucas Villa Vásquez, ocurrida el 11 de mayo de 2021 en Pereira durante el Paro Nacional de Colombia, por motivos de la reforma tributaria presentada por el gobierno del entonces presidente Iván Duque, fue debido a problemas con el microtráfico de drogas. Sin embargo, el 13 de Julio de 2023, la Fiscalía de Colombia informó a través de Boletín 49254 que capturaron a Jonatan Stiven Mejía Hurtado, alias Truan, jefe de la organización delincuencial ‘La Cordillera’, quien está posiblemente vinculado con el crimen que resultó en la muerte de Lucas Villa Vásquez y que operan en Dosquebradas, Risaralda. Según la evidencia presentada por la Fiscalía, parece que los líderes principales de “La Cordillera” creían que las acciones de bloqueo de las vías por las marchas del líder estudiantil durante las protestas estaban perjudicando los intereses del grupo ilegal.',
     colors: [
       {
         color: "#0000ff",
