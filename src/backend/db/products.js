@@ -10,8 +10,44 @@ import MARKWAHLBERG from "./imagery/Mark Wahlberg.png";
 import CABALVALENCIA from "./imagery/Cabal Valencia.png";
 import BILLGATES from "./imagery/BillGates.png";
 import DEBRIS from "./imagery/Debris (2).png";
+import ONU from "./imagery/onu.png";
 
 export const products = [
+  {
+    _id: uuid(),
+    name: 'ONU investigará a Uribe, Duque y a Marta Ramírez por supuestos vinculos con el narcotráfico.',
+    date: new Date("2023-07-30").toISOString(),
+    tags: ["ONU", "Alvaro Uribe", "investigación", "denuncias", "Marta Ramirez", "corrupción", "Ivan Duque", "narcotrafico"],
+    status: "FALSO",
+    category: 'América Latina',
+    afirmacion:  'Las Naciones Unidas han anunciado su intención de realizar investigaciones exhaustivas a los expresidentes Álvaro Uribe Vélez e Iván Duque y a la expresidenta Marta Lucía Ramírez, sobre denuncias de participación en narcotráfico y prácticas corruptas.',
+    analisis:'De acuerdo con publicaciones en redes sociales <em><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=T3F1ThkJpjw" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Video</a></em>  se ha anunciado que la ONU llevará a cabo investigaciones sobre los expresidentes Álvaro Uribe Vélez e Iván Duque, así como la exvicepresidenta Marta Lucía Ramírez, debido a acusaciones que involucran su participación en actividades relacionadas con el narcotráfico y actos de corrupción. Además, también se investigarán las conexiones de Sarmiento Angulo con el caso Odebrecht, y se llevará a cabo una revisión de la gestión del fiscal Barbosa en relación con sus investigaciones. <br/> Es importante señalar que, respecto a las <em><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=jJA4pH-ljC4" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>declaraciones</a></em> del 12 de julio de 2023 realizadas por el Sr. Leonardo Rodríguez Pérez, representante ante la ONU de la <em><a target="_blank" rel="noreferrer" href="https://www.malocainternationale.com/en" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>ONG Maloca Internationale</a></em>,  en la 33ª Reunión y 53° Período Ordinario de Sesiones del Consejo de Derechos Humanos, hasta el momento no se ha encontrado ningún<em><a target="_blank" rel="noreferrer" href="https://www.ohchr.org/es/hr-bodies/hrc/regular-sessions/session53/list-reports" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> reporte </a></em> que indique que el Consejo de Derechos Humanos de las Naciones Unidas tenga planes de ordenar una investigación que involucre a los expresidentes Álvaro Uribe e Iván Duque, ni a la exvicepresidenta Marta Lucía Ramírez. Del mismo modo, no se ha mencionado ninguna acción relacionada con el Sr. Luis Carlos Sarmiento Angulo o el fiscal Francisco  Barbosa.',
+    veredicto: 'Estas publicaciones son FALSAS. A pesar de las declaraciones realizadas por el representante de una ONG en la 33ª Reunión y 53° Período Ordinario de Sesiones del Consejo de Derechos Humanos de las Naciones Unidas, no se ha confirmado esta información en informes creíbles o declaraciones oficiales. Además, la Organización de las Naciones Unidas (ONU) no tiene la función de ordenar investigaciones sobre expresidentes o cualquier otra persona.',
+    image: ONU,
+    description:
+      'De acuerdo con publicaciones en redes sociales Video se ha anunciado que la ONU llevará a cabo investigaciones sobre los expresidentes Álvaro Uribe Vélez e Iván Duque, así como la exvicepresidenta Marta Lucía Ramírez, debido a acusaciones que involucran su participación en actividades relacionadas con el narcotráfico y actos de corrupción. Además, también se investigarán las conexiones de Sarmiento Angulo con el caso Odebrecht, y se llevará a cabo una revisión de la gestión del fiscal Barbosa en relación con sus investigaciones. Es importante señalar que, respecto a las declaraciones del 12 de julio de 2023 realizadas por el Sr. Leonardo Rodríguez Pérez, representante ante la ONU de la ONG Maloca Internationale, en la 33ª Reunión y 53° Período Ordinario de Sesiones del Consejo de Derechos Humanos, hasta el momento no se ha encontrado ningúnreporte que indique que el Consejo de Derechos Humanos de las Naciones Unidas tenga planes de ordenar una investigación que involucre a los expresidentes Álvaro Uribe e Iván Duque, ni a la exvicepresidenta Marta Lucía Ramírez. Del mismo modo, no se ha mencionado ninguna acción relacionada con el Sr. Luis Carlos Sarmiento Angulo o el fiscal Francisco Barbosa.',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  }, 
   {
     _id: uuid(),
     name: 'Imagenes de restos recuperados del submarino "Titán" tras su implosión.',
@@ -120,17 +156,11 @@ export const products = [
   {
     _id: uuid(),
     name:  'El actor Mark Wahlberg dijo que “las élites pedófilas no van a tener donde esconderse”  ',
-
-date: new Date("2023-07-25").toISOString(),
-
- tags: ["Mark Wahlberg", "Hollywood", "pedófilas", "élites", "sound of freedom" ],
-
-status: "FALSO",
-
-category: 'Estados Unidos',
-
-afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Hollywood “no van a tener dónde esconderse”  ',
-
+    date: new Date("2023-07-25").toISOString(),
+    tags: ["Mark Wahlberg", "Hollywood", "pedófilas", "élites", "sound of freedom" ],
+    status: "FALSO",
+    category: 'Estados Unidos',
+    afirmacion:  'Mark Wahlberg dijo que los pedófilos de la alta sociedad de Hollywood “no van a tener dónde esconderse”  ',
     analisis: 'Publicaciones en redes sociales <em><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=6FB1McPCfDc" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Video</a></em>  afirman que el actor Mark Wahlberg hace declaraciones sobre el abuso sexual del poder de la élite en la industria del cine de los Estados Unidos. <br/> Estas falsas afirmaciones, surgen después del reciente lanzamiento de la película <em><a target="_blank" rel="noreferrer" href="https://www.bbc.com/mundo/articles/c3gzelvnpn9o" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>”Sound of Freedom”</a></em> (Basada en una historia real), que trata sobre el tráfico de menores y está protagonizada por Jim Caviezel, Mira Sorvino y Bill Camp, y en la que supuestamente, Mark Wahlberg, tras el éxito del film, hace aseveraciones sobre la pedofilia en Hollywood.',
     veredicto: 'Estas publicaciones son FALSAS, ya que no existe evidencia de que Mark Wahlberg haya hecho tales declaraciones. Además, un representante del actor desmintió esa historia como "completamente falsa".',
     image: MARKWAHLBERG,
