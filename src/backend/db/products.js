@@ -12,9 +12,45 @@ import BILLGATES from "./imagery/BillGates.png";
 import DEBRIS from "./imagery/Debris (2).png";
 import ONU from "./imagery/onu.png";
 import PINK from "./imagery/Pink.png";
+import BABIES from "./imagery/Babies.png";
 
 
 export const products = [
+  {
+    _id: uuid(),
+    name: 'WEF prohíbe la concepción natural y bebes seran criados en laboratorios para 2030.',
+    date: new Date("2023-07-26").toISOString(),
+    tags: ["Bebés", "El Foro Económico Mundial", "2030", "laboratorios", "concepción natural", "WEF"],
+    status: "FALSO",
+    category: 'Resto del Mundo',
+    afirmacion: 'El Foro Económico Mundial (WEF, por sus siglas en inglés) ha prohibido  la concepción natural y que todos los bebés serán criados en laboratorios para el año 2030.',
+    analisis:'Ha estado circulando en redes sociales  como <em><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@mirandarayos/video/7256624060367605038" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> Tiktok</a></em> y <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/photo/?fbid=10210226011364124&set=a.10200310060511550" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> Facebook</a></em> información errónea sobre que el Foro Económico Mundial, ha implementado la prohibición de la concepción natural y que todos los bebés serán criados en laboratorios para el año 2030. <br/> El Foro Económico Mundial <em><a target="_blank" rel="noreferrer" href="https://es.weforum.org/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> WEF</a></em>,  a través de un vocero oficial de la organización, en declaraciones a la Agencia France-Presse  <em><a target="_blank" rel="noreferrer" href="https://factual.afp.com/doc.afp.com.33PR7HK" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> AFP</a></em>, ha confirmado que estas afirmaciones no tienen fundamento y que el estudio mencionado en las publicaciones virales, supuestamente publicado en el sitio web del WEF, no contiene tales propuestas. Además, es importante señalar que el Foro Económico Mundial no tiene la autoridad legal para hacer cumplir tales medidas a escala global o dictar cómo los países manejan sus políticas reproductivas. El WEF es principalmente un foro para discusiones y colaboraciones, y no tiene autoridad legal sobre las políticas de los países.',
+    veredicto: 'Estas publicaciones son FALSAS,  la afirmación de que el Foro Económico Mundial prohibió la concepción natural y ordenó la crianza de bebés en laboratorio para 2030 es infundada y ha sido refutada por la propia organización. <br/> Es crucial tener cuidado con la información errónea y confiar en fuentes verificadas para obtener información precisa.',
+    image: BABIES,
+    description:
+      'Ha estado circulando en redes sociales información errónea sobre que el Foro Económico Mundial (WEF, por sus siglas en inglés), ha implementado la prohibición de la concepción natural y que todos los bebés serán criados en laboratorios para el año 2030. El Foro Económico Mundial WEF, a través de un vocero oficial de la organización, en declaraciones a la Agencia France-Presse AFP, ha confirmado que estas afirmaciones no tienen fundamento y que el estudio mencionado en las publicaciones virales, supuestamente publicado en el sitio web del WEF, no contiene tales propuestas. Además, es importante señalar que el Foro Económico Mundial no tiene la autoridad legal para hacer cumplir tales medidas a escala global o dictar cómo los países manejan sus políticas reproductivas. El WEF es principalmente un foro para discusiones y colaboraciones, y no tiene autoridad legal sobre las políticas de los países.',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  }, 
   {
     _id: uuid(),
     name: 'Barack Obama y Joe Biden  se vistieron de rosado por la película de Barbie.',
