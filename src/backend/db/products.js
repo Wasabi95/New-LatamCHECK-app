@@ -13,9 +13,45 @@ import DEBRIS from "./imagery/Debris (2).png";
 import ONU from "./imagery/onu.png";
 import PINK from "./imagery/Pink.png";
 import BABIES from "./imagery/Babies.png";
+import TORNADO from "./imagery/Tornado.png";
 
 
 export const products = [
+  {
+    _id: uuid(),
+    name: 'Planta Pfizer en Carolina del Norte arrasada por tornado, incluyendo vacunas Covid-19.',
+    date: new Date("2023-07-25").toISOString(),
+    tags: ["Pfizer", "Covid-19", "tornado", "vacunas", "planta"],
+    status: "FALSO", 
+    category: 'Estados Unidos',
+    afirmacion: 'Un tornado en Carolina del Norte ha causado daños significativos en un almacén de Pfizer, lo que ha provocado la destrucción de un gran suministro de vacunas contra el covid.',
+    analisis:'Se ha difundido en redes sociales como <em><a target="_blank" rel="noreferrer" href="https://twitter.com/MattWallace888/status/1681790037690667009" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> Twitter </a></em> y <em><a target="_blank" rel="noreferrer" href="https://www.instagram.com/p/Cu5iB3gN6sn/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> Instagram </a></em>, la noticia de que un tornado en Rocky Mount, Carolina del Norte, habría causado daños significativos a un almacén de Pfizer que contenía vacunas contra el COVID-19. <br/> El miércoles 19 de julio de 2023, la planta farmacéutica de Pfizer en Rocky Mount, Carolina del Norte, sufrió graves daños debido a un tornado. El Dr. Albert Bourla, presidente y director ejecutivo de Pfizer Inc., confirmó a través de un <em><a target="_blank" rel="noreferrer" href="https://www.pfizer.com/news/press-release/press-release-detail/pfizer-announces-post-tornado-relief-plans-rocky-mount?linkId=226198103" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>  comunicado de prensa</a></em>, que la instalación afectada sufrió daños importantes después de que el tornado tocó tierra cerca del lugar. Afortunadamente, no hubo heridos graves, ya que los trabajadores siguieron los procedimientos de seguridad y evacuaron el área, asegurando que todos se encuentran a salvo. Además, el Dr. Bourla informó que <em><a target="_blank" rel="noreferrer" href="https://cdn.pfizer.com/pfizercom/2023-07/Rocky_Mount_NC_Fact_Sheet_072023.pdf" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>  la planta de fabricación de Pfizer en Rocky Mount</a></em>, juega un papel crucial, ya que es responsable de producir aproximadamente el 25% de todos los productos inyectables estériles de la compañía. Esto incluye medicamentos como anestesia, analgesia, terapéuticos, antiinfecciosos y bloqueadores neuromusculares. Asimismo, esta planta abastece cerca del 8% de todos los productos inyectables estériles utilizados en hospitales de Estados Unidos.',
+    veredicto: 'La afirmación de que un tornado destruyó un almacén con vacunas contra el COVID-19 en la planta de fabricación de Pfizer en Rocky Mount es completamente falsa. Esta planta en Carolina del Norte es responsable de producir medicamentos inyectables estériles, tales como anestesia, analgésicos, antiinfecciosos y bloqueadores neuromusculares, pero no está vinculada a la producción de vacunas contra el COVID-19.',
+    image: TORNADO,
+    description:
+      'Ha estado circulando en redes sociales información errónea sobre que el Foro Económico Mundial (WEF, por sus siglas en inglés), ha implementado la prohibición de la concepción natural y que todos los bebés serán criados en laboratorios para el año 2030. El Foro Económico Mundial WEF, a través de un vocero oficial de la organización, en declaraciones a la Agencia France-Presse AFP, ha confirmado que estas afirmaciones no tienen fundamento y que el estudio mencionado en las publicaciones virales, supuestamente publicado en el sitio web del WEF, no contiene tales propuestas. Además, es importante señalar que el Foro Económico Mundial no tiene la autoridad legal para hacer cumplir tales medidas a escala global o dictar cómo los países manejan sus políticas reproductivas. El WEF es principalmente un foro para discusiones y colaboraciones, y no tiene autoridad legal sobre las políticas de los países.',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  }, 
   {
     _id: uuid(),
     name: 'WEF prohíbe la concepción natural y bebes seran criados en laboratorios para 2030.',
