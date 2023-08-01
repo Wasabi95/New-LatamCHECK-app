@@ -22,7 +22,7 @@ export const products = [
     _id: uuid(),
     name: 'WEF prohíbe la concepción natural y bebes seran criados en laboratorios para 2030.',
     date: new Date("2023-07-26").toISOString(),
-    tags: ["Bebés", "El Foro Económico Mundial", "2030", "laboratorios", "Schwab", "concepción natural", "WEF","Klaus"],
+    tags: ["Bebés", "El Foro Económico Mundial", "2030", "laboratorios", "Schwab", "concepción natural", "foro economico", "WEF","Klaus"],
     status: "FALSO", 
     category: 'Resto del Mundo',
     afirmacion: 'El Foro Económico Mundial (WEF, por sus siglas en inglés) ha prohibido  la concepción natural y que todos los bebés serán criados en laboratorios para el año 2030.',
