@@ -14,9 +14,45 @@ import ONU from "./imagery/onu.png";
 import PINK from "./imagery/Pink.png";
 import BABIES from "./imagery/Babies.png";
 import TORNADO from "./imagery/Tornado.png";
+import PERALES from "./imagery/Perales.png";
 
 
 export const products = [
+  {
+    _id: uuid(),
+    name: 'El reconocido cantautor español José Luis Perales murió el 7 de agosto del 2023.',
+    date: new Date("2023-08-8").toISOString(),
+    tags: ["José Luis Perales", "cantante", "españa", "muerte", "falleció"],
+    status: "FALSO", 
+    category: 'Resto del Mundo',
+    afirmacion: 'El cantautor y productor español José Luis Perales falleció el 7 de agosto del 2023.',
+    analisis:'La noticia del presunto fallecimiento del cantante español José Luis Perales, a sus 78 años a causa de un infarto, ha circulado en las redes sociales, como Twitter <em><a target="_blank" rel="noreferrer" href="https://twitter.com/QuadratinMexico/status/1688639713601622016" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> 1 </a></em>, <em><a target="_blank" rel="noreferrer" href="https://twitter.com/drcumana/status/1688637015208665089" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> 2 </a></em>. Sin embargo, el mismo 7 de agosto de 2023, el propio cantante desmintió esta noticia a través de su cuenta de <em><a target="_blank" rel="noreferrer" href=""https://twitter.com/PeralesOficial/status/1688647093244571648" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>  Twitter </a></em> y brindó a sus seguidores un mensaje tranquilizador, declarando: "Estoy más vivo y feliz que nunca".',
+    veredicto: 'Por lo tanto, la afirmación de que José Luis Perales falleció en esta fecha es completamente falsa.',
+    image: PERALES,
+    description:
+      'La noticia del presunto fallecimiento del cantante español José Luis Perales, a sus 78 años a causa de un infarto, ha circulado en las redes sociales, como Twitter 1 , 2 . Sin embargo, el mismo 7 de agosto de 2023, el propio cantante desmintió esta noticia a través de su cuenta de Twitter y brindó a sus seguidores un mensaje tranquilizador, declarando: "Estoy más vivo y feliz que nunca".',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  }, 
   {
     _id: uuid(),
     name: 'Planta Pfizer en Carolina del Norte arrasada por tornado, incluyendo vacunas Covid-19.',
