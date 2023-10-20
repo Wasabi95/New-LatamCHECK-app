@@ -15,10 +15,54 @@ import PINK from "./imagery/Pink.png";
 import BABIES from "./imagery/Babies.png";
 import TORNADO from "./imagery/Tornado.png";
 import PERALES from "./imagery/Perales.png";
-import SWIFT from "./imagery/Taylor Swift.png";
+import SWIFT from "./imagery/TaylorSwift.png";
+import EMIR from "./imagery/emir.png";
+
 
 
 export const products = [
+        {
+        _id: uuid(),
+        name: "Vídeo capta la amenaza del emir de Qatar de provocar una escasez mundial de gas en solidaridad con Palestina.",
+        date: new Date("2023-10-19").toISOString(),
+        tags: ["Palestina", "Israel", "amenaza", "emir de Qatar", "solidaridad", "gas natural", "Gaza"],
+        status: "FALSO",
+        category: 'El Resto del Mundo',
+        afirmacion:  ' Vídeo muestra al Emir de Qatar  anunciando que si no cesan los bombardeos sobre Gaza, cortará el suministro de gas al mundo, como gesto de apoyo a Palestina.',
+        analisis: 'La publicación en Facebook muestra un <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/wakili.elmainari/videos/844930417313394" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> video </a></em> \
+        que aparentemente presenta al Emir de Qatar, Jeque Tamim bin Hamad Al-Thani, discutiendo la posibilidad de causar una escasez global de gas natural como muestra de solidaridad con Palestina. \
+        Tras el <em><a target="_blank" rel="noreferrer" href="https://www.reuters.com/world/middle-east/how-hamas-attack-israel-unfolded-2023-10-07/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> ataque sorpresa</a></em> de Hamás a Israel el 7 de octubre, coincidiendo con la festividad judía de Simjat Torá, \
+        el grupo islamista llevó a cabo un ataque coordinado that involved land, sea, and air operations, including missile launches and a deep incursion into Israeli-controlled territory. \
+        Furthermore, Israeli women and children were captured and transported to Gaza in exchange for the release of 36 Palestinian women and children from Israeli prisons. \
+        Since the armed conflict began between the Palestinian militant group Hamas and Israel on October 7, 2023, \
+        <em><a target="_blank" rel="noreferrer" href="https://www.dw.com/es/puede-ser-qatar-un-mediador-en-el-conflicto-entre-israel-y-ham%C3%A1s/a-67095308" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>Qatar,</a></em> \
+        has been involved in mediation efforts, facilitating discussions and negotiations among the parties involved to help reduce the escalation of the conflict and seek the release of hostages. They have served as mediators to help find a peaceful solution to the situation.',       
+        veredicto: 'El discurso del Emir qatarí Al Thani que se mencionaba en el video corresponde a una participación en el Foro de Doha en 2017, donde no se hizo mención del suministro de gas. Por el contrario, Qatar ha actuado como mediador para ayudar a encontrar una solución pacífica a la situación. Es esencial contar con información precisa y verificada para evitar la propagación de desinformación.',
+        image: EMIR,
+        description: 'Se está difundiendo una imagen en las redes sociales, especialmente en Facebook, en la que aparentemente se observa a la reconocida cantante estadounidense Taylor Swift usando una prenda con el eslogan del partido político mexicano Movimiento de Regeneración Nacional (Morena) durante su más reciente concierto en México.',
+        colors: [
+            {
+                color: "#0000ff",
+                colorQuantity: 10,
+            },
+            {
+                color: "#00ff00",
+                colorQuantity: 6,
+            },
+            {
+                color: "#ff0000",
+                colorQuantity: 9,
+            },
+        ],
+        price: 31990,
+        originalPrice: 51999,
+        company: "redmi",
+        isShippingAvailable: true,
+        stock: 25,
+        reviewCount: 418,
+        stars: 3.7,
+    },
+
   {
     _id: uuid(),
     name: 'Taylor Swift luce una camiseta de Morena, respaldando al gobierno del presidente AMLO.',
