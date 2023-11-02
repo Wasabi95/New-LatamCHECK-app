@@ -10,7 +10,7 @@ import MARKWAHLBERG from "./imagery/Mark Wahlberg.png";
 import CABALVALENCIA from "./imagery/Cabal Valencia.png";
 import BILLGATES from "./imagery/BillGates.png";
 import DEBRIS from "./imagery/Debris (2).png";
-import ONU from "./imagery/onu.png";
+import ONU from "./imagery/ONU.png";
 import PINK from "./imagery/Pink.png";
 import BABIES from "./imagery/Babies.png";
 import TORNADO from "./imagery/Tornado.png";
@@ -29,6 +29,7 @@ export const products = [
         status: "FALSO",
         category: 'El Resto del Mundo',
         afirmacion:  ' Vídeo muestra al Emir de Qatar  anunciando que si no cesan los bombardeos sobre Gaza, cortará el suministro de gas al mundo, como gesto de apoyo a Palestina.',
+        // eslint-disable-next-line no-multi-str
         analisis: 'La publicación en Facebook muestra un <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/wakili.elmainari/videos/844930417313394" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> video </a></em> \
         que aparentemente presenta al Emir de Qatar, Jeque Tamim bin Hamad Al-Thani, discutiendo la posibilidad de causar una escasez global de gas natural como muestra de solidaridad con Palestina. \
         Tras el <em><a target="_blank" rel="noreferrer" href="https://www.reuters.com/world/middle-east/how-hamas-attack-israel-unfolded-2023-10-07/" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> ataque sorpresa</a></em> de Hamás a Israel el 7 de octubre, coincidiendo con la festividad judía de Simjat Torá, \
