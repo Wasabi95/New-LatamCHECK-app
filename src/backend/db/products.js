@@ -17,13 +17,48 @@ import TORNADO from "./imagery/Tornado.png";
 import PERALES from "./imagery/Perales.png";
 import SWIFT from "./imagery/TaylorSwift.png";
 import EMIR from "./imagery/emir.png";
+import PFIZER from "./imagery/PFIZER.jpg";
 
 
 
 export const products = [
+  {
+    _id: uuid(),
+    name: "Pfizer reconoce la miocarditis como efecto secundario de las vacunas contra el Covid.",
+    date: new Date("2023-11-01").toISOString(),
+    tags: ["Covid", "Covid-19", "Covid 19", "Pfizer", "vacunas", "miocarditis", "efecto secundario"],
+    status: "PARCIAL",
+    category: 'Estados Unidos',
+    afirmacion: 'Pfizer confiesa oficialmente: su pócima génica experimental ARNm (que no es una vacuna), incrementa el riesgo de sufrir miocarditis y pericarditis.',
+    analisis: 'La publicación viralizada en redes sociales, como X y Facebook, muestra un aparente <em><a target="_blank" rel="noreferrer" href="https://twitter.com/eduardomenoni/status/1714400487665963312" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>comunicado</a></em> de la empresa farmacéutica Pfizer. "Pfizer confiesa oficialmente: su pócima génica experimental ARNm (que no es una vacuna) incrementa el riesgo de sufrir miocarditis y pericarditis (enfermedades graves y de por vida), tras negarlo durante casi cuatro años de embolsarse millones. Hay un exceso mundial de muertes sin explicación y miles de jóvenes con patologías impropias de su edad. Nadie está en la cárcel por ello.", afirma una de las publicaciones de X. Una captura de pantalla es de un comunicado en inglés de Pfizer, que señala: "Las vacunas de ARNm contra el covid-19, autorizadas o aprobadas, muestran mayores riesgos de miocarditis (inflamación del músculo cardíaco) y pericarditis (inflamación del revestimiento exterior del corazón), especialmente durante la primera semana después de la vacunación.  Segun el British Heart Foundation, los casos de <em><a target="_blank" rel="noreferrer" href="https://www.https://twitter.com/eduardomenoni/status/1714400487665963312" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}>miocarditis</a></em> a causa de la vacuna de Covid 19 son extreadamente raros',
+    veredicto: 'El comunicado de Pfizer esta asociado con la Agenda 2030 la cual insinua que las vacunas son peligrosas para la salud y que la pandemia fue creada por elites mundiales para controlar la humanidad, aunque es cierto el communicado de Pfizer y es cierto que en algunos casos la vacuna produce miocarditis y periocarditis es "Enganoso" insinuar que es peligrosa para la salud, por tal razon calificamos esta noticia como "PARCIAL"  .',
+    image: PFIZER,
+    description: 'Se está difundiendo una imagen en las redes sociales, especialmente en Facebook, en la que aparentemente se observa a la reconocida cantante estadounidense Taylor Swift usando una prenda con el eslogan del partido político mexicano Movimiento de Regeneración Nacional (Morena) durante su más reciente concierto en México.',
+    colors: [
+      {
+        color: "#0000ff",
+        colorQuantity: 10,
+      },
+      {
+        color: "#00ff00",
+        colorQuantity: 6,
+      },
+      {
+        color: "#ff0000",
+        colorQuantity: 9,
+      },
+    ],
+    price: 31990,
+    originalPrice: 51999,
+    company: "redmi",
+    isShippingAvailable: true,
+    stock: 25,
+    reviewCount: 418,
+    stars: 3.7,
+  },
         {
         _id: uuid(),
-        name: "Vídeo capta la amenaza del emir de Qatar de provocar una escasez mundial de gas en solidaridad con Palestina.",
+        name: "Emir de Qatar provoca una escasez mundial de gas en solidaridad con Palestina.",
         date: new Date("2023-10-19").toISOString(),
         tags: ["Palestina", "Israel", "amenaza", "emir de Qatar", "solidaridad", "gas natural", "Gaza"],
         status: "FALSO",
@@ -70,7 +105,7 @@ export const products = [
     date: new Date("2023-08-28").toISOString(),
     tags: ["Taylor Swift", "conciertos", "camiseta", "apoyo", "AMLO","presidente"],
     status: "FALSO", 
-    category: 'América Latina',
+    category: 'Mexico',
     afirmacion: 'Al concluir su concierto, Taylor Swift mostró su respaldo a la administración del presidente Andrés Manuel López Obrador vistiendo una camiseta en la que se lee “Morena, la esperanza de México.',
     analisis:'Se está difundiendo una imagen en las redes sociales, especialmente en  <em><a target="_blank" rel="noreferrer" href="https://www.facebook.com/photo?fbid=779895557475958&set=a.518920790240104" style={{ color: "blue", textDecoration: "underline", fontStyle: "italic", fontWeight: "normal", fontSize: "inherit" }}> Facebook </a></em>,  en la que aparentemente se observa a la reconocida cantante estadounidense Taylor Swift usando una prenda con el eslogan del partido político mexicano Movimiento de Regeneración Nacional (Morena) durante su más reciente concierto en México.  <br/> En el marco de su "Eras Tour", la vocalista estadounidense ofreció una serie de cuatro conciertos en México los días 24, 25, 26 y 27 de agosto de 2023. Sin embargo, en ninguna de estas fechas la cantante lució una camiseta con elementos políticos. Mediante una búsqueda inversa de la imagen en Google, se revela que la fotografía de Taylor Swift con la camiseta de apoyo a Morena es falsa. La imagen original fue tomada el 28 de julio del presente año en California durante otro de sus conciertos, y en ese momento, la cantante llevaba una camiseta blanca simple, sin ninguna referencia política.',
     veredicto: 'Es importante destacar que esta información carece de veracidad. Taylor Swift nunca utilizó una camiseta de Morena en sus conciertos ni hizo comentarios relacionados con la política mexicana. La imagen ha sido manipulada. Además, no existen registros que confirmen que la artista estadounidense haya manifestado apoyo al presidente Andrés ManuelLópez Obrador o a su gobierno durante sus actuaciones en México, a diferencia de lo que afirman los mensajes virales.',

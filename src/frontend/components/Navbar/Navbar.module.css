@@ -5,7 +5,8 @@
   bottom: 0;
   right: 0;
   height: 5rem;
-  background: var(--white);
+  /* background: var(--white); */
+  background: #2b0f7e;
   box-shadow: var(--shadow-3);
   z-index: 101;
 }
@@ -30,11 +31,11 @@
 
 .logo {
   margin-top: 0.75rem;
-  color: var(--black);
+  color: white;
 }
 
 .logoTheme {
-  color: var(--primary-600);
+  color:#eb4c7f;
   font-weight: 900;
 }
 .logoLink {

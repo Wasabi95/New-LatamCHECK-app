@@ -10,6 +10,15 @@ import {
   removeItemFromCartHandler,
   updateCartItemHandler,
 } from './backend/controllers/CartController';
+
+
+import {
+  addItemToWishlistHandler,
+  getWishlistItemsHandler,
+  removeItemFromWishlistHandler,
+  removeWishlistHandler,
+} from './backend/controllers/WishlistController';
+import { users } from './backend/db/users';
 import {
   getAllCategoriesHandler,
   getCategoryHandler,
@@ -18,15 +27,9 @@ import {
   getAllProductsHandler,
   getProductHandler,
 } from './backend/controllers/ProductController';
-import {
-  addItemToWishlistHandler,
-  getWishlistItemsHandler,
-  removeItemFromWishlistHandler,
-  removeWishlistHandler,
-} from './backend/controllers/WishlistController';
 import { categories } from './backend/db/categories';
 import { products } from './backend/db/products';
-import { users } from './backend/db/users';
+
 
 export function makeServer({ environment = 'development' } = {}) {
   return new Server({
@@ -59,11 +62,11 @@ export function makeServer({ environment = 'development' } = {}) {
 
     routes() {
       this.namespace = 'api';
-      // // auth routes (public)
-      // this.post('/auth/signup', signupHandler.bind(this));
-      // this.post('/auth/login', loginHandler.bind(this));
+      // auth routes (public)
+      this.post('/auth/signup', signupHandler.bind(this));
+      this.post('/auth/login', loginHandler.bind(this));
 
-      // products routes (public)
+      // // products routes (public)
       this.get('/products', getAllProductsHandler.bind(this));
       this.get('/products/:productId', getProductHandler.bind(this));
 
@@ -71,7 +74,7 @@ export function makeServer({ environment = 'development' } = {}) {
       this.get('/categories', getAllCategoriesHandler.bind(this));
       this.get('/categories/:categoryId', getCategoryHandler.bind(this));
 
-      // cart routes (private)
+      //cart routes (private)
       this.get('/user/cart', getCartItemsHandler.bind(this));
       this.post('/user/cart', addItemToCartHandler.bind(this));
       this.post('/user/cart/:productId', updateCartItemHandler.bind(this));

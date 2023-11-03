@@ -2,6 +2,14 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 import lc2 from "./images/lc2.png"
 import '@fortawesome/fontawesome-free/css/all.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faGithub, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Import the Font Awesome brand icons
+
+// Import other necessary components and styles
+
+// Add the Font Awesome brand icons to the library
+library.add(faFacebook, faGithub, faXTwitter, faLinkedin);
 
 function Footer() {
   return (
@@ -25,18 +33,18 @@ function Footer() {
           />
           <span
             style={{
-              fontFamily: "Raleway",
+              // fontFamily: "Raleway",
               color: "white",
-              fontWeight: "300",
+              fontWeight: "100",
               fontSize: "25px",
               marginLeft: "1px", 
             }}
           >
-            Latam
+            Media
           </span>
           <span
             style={{
-              fontFamily: "Roboto",
+              // fontFamily: "Roboto",
               color: "#e94272",
               fontWeight: "900",
               fontSize: "25px",
@@ -76,27 +84,28 @@ function Footer() {
           </p>
           
           <ul className="social-links center">
-            <li>
-              <Link to="https://www.facebook.com/AndyCarvajal100fx" target="_blank">
-                <i className="fab fa-facebook"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="https://github.com/Wasabi95" target="_blank">
-                <i className="fab fa-github"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="https://twitter.com/AndreyCarvaja17" target="_blank">
-                <i className="fab fa-twitter"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="https://www.linkedin.com/in/andy-sanclemente-58b134283/" target="_blank">
-                <i className="fab fa-linkedin"></i>
-              </Link>
-            </li>
-          </ul>
+  <li>
+    <Link to="https://www.facebook.com/AndyCarvajal100fx" target="_blank">
+      <FontAwesomeIcon icon={faFacebook} />
+    </Link>
+  </li>
+  <li>
+    <Link to="https://github.com/Wasabi95" target="_blank">
+      <FontAwesomeIcon icon={faGithub} />
+    </Link>
+  </li>
+  <li>
+    <Link to="https://twitter.com/AndreyCarvaja17" target="_blank">
+      <FontAwesomeIcon icon={faXTwitter} />
+    </Link>
+  </li>
+  <li>
+    <Link to="https://www.linkedin.com/in/andy-sanclemente-58b134283/" target="_blank">
+      <FontAwesomeIcon icon={faLinkedin} />
+    </Link>
+  </li>
+</ul>
+
         </div>
 
         <div className="col-3 right">
